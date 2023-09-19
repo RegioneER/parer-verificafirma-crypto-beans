@@ -1,6 +1,24 @@
+/*
+ * Engineering Ingegneria Informatica S.p.A.
+ *
+ * Copyright (C) 2023 Regione Emilia-Romagna
+ * <p/>
+ * This program is free software: you can redistribute it and/or modify it under the terms of
+ * the GNU Affero General Public License as published by the Free Software Foundation,
+ * either version 3 of the License, or (at your option) any later version.
+ * <p/>
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU Affero General Public License for more details.
+ * <p/>
+ * You should have received a copy of the GNU Affero General Public License along with this program.
+ * If not, see <https://www.gnu.org/licenses/>.
+ */
+
 package it.eng.parer.crypto.model.verifica.input;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 /**
  * Profilo di verifica: Configurando questo è oggetto è possibile applicare dei "bypass" alla verifica delle firme.
@@ -10,6 +28,11 @@ import java.io.Serializable;
  * <li>controllo catena trusted</li>
  * <li>controllo certificato</li>
  * <li>controllo CRL</li>
+ * </ul>
+ * Oltre ai controlli viene introdotto un parametro booleano che permette di includere nella response eventuali file
+ * binari (per default true):
+ * <ul>
+ * <li>includeCertificateAndRevocationValues</li>
  * </ul>
  *
  * @author Snidero_L
@@ -22,6 +45,7 @@ public class CryptoProfiloVerifica implements Serializable {
     private boolean controlloCatenaTrustAbilitato = true;
     private boolean controlloCertificatoAbilitato = true;
     private boolean controlloCrlAbilitato = true;
+    private boolean includeCertificateAndRevocationValues = true;
 
     public static CryptoProfiloVerifica profiloDefault() {
         return new CryptoProfiloVerifica();
@@ -63,49 +87,45 @@ public class CryptoProfiloVerifica implements Serializable {
         return this;
     }
 
+    public boolean isIncludeCertificateAndRevocationValues() {
+        return includeCertificateAndRevocationValues;
+    }
+
+    public CryptoProfiloVerifica setIncludeCertificateAndRevocationValues(
+            boolean includeCertificateAndRevocationValues) {
+        this.includeCertificateAndRevocationValues = includeCertificateAndRevocationValues;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return "CryptoProfiloVerifica{" + "controlloCrittograficoAbilitato=" + controlloCrittograficoAbilitato
+        return "CryptoProfiloVerifica [controlloCrittograficoAbilitato=" + controlloCrittograficoAbilitato
                 + ", controlloCatenaTrustAbilitato=" + controlloCatenaTrustAbilitato
                 + ", controlloCertificatoAbilitato=" + controlloCertificatoAbilitato + ", controlloCrlAbilitato="
-                + controlloCrlAbilitato + '}';
+                + controlloCrlAbilitato + ", includeCertificateAndRevocationValues="
+                + includeCertificateAndRevocationValues + "]";
     }
 
     @Override
     public int hashCode() {
-        int hash = 3;
-        hash = 89 * hash + (this.controlloCrittograficoAbilitato ? 1 : 0);
-        hash = 89 * hash + (this.controlloCatenaTrustAbilitato ? 1 : 0);
-        hash = 89 * hash + (this.controlloCertificatoAbilitato ? 1 : 0);
-        hash = 89 * hash + (this.controlloCrlAbilitato ? 1 : 0);
-        return hash;
+        return Objects.hash(controlloCatenaTrustAbilitato, controlloCertificatoAbilitato,
+                controlloCrittograficoAbilitato, controlloCrlAbilitato, includeCertificateAndRevocationValues);
     }
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) {
+        if (this == obj)
             return true;
-        }
-        if (obj == null) {
+        if (obj == null)
             return false;
-        }
-        if (getClass() != obj.getClass()) {
+        if (getClass() != obj.getClass())
             return false;
-        }
-        final CryptoProfiloVerifica other = (CryptoProfiloVerifica) obj;
-        if (this.controlloCrittograficoAbilitato != other.controlloCrittograficoAbilitato) {
-            return false;
-        }
-        if (this.controlloCatenaTrustAbilitato != other.controlloCatenaTrustAbilitato) {
-            return false;
-        }
-        if (this.controlloCertificatoAbilitato != other.controlloCertificatoAbilitato) {
-            return false;
-        }
-        if (this.controlloCrlAbilitato != other.controlloCrlAbilitato) {
-            return false;
-        }
-        return true;
+        CryptoProfiloVerifica other = (CryptoProfiloVerifica) obj;
+        return controlloCatenaTrustAbilitato == other.controlloCatenaTrustAbilitato
+                && controlloCertificatoAbilitato == other.controlloCertificatoAbilitato
+                && controlloCrittograficoAbilitato == other.controlloCrittograficoAbilitato
+                && controlloCrlAbilitato == other.controlloCrlAbilitato
+                && includeCertificateAndRevocationValues == other.includeCertificateAndRevocationValues;
     }
 
 }
