@@ -1,6 +1,27 @@
+/*
+ * Engineering Ingegneria Informatica S.p.A.
+ *
+ * Copyright (C) 2023 Regione Emilia-Romagna
+ * <p/>
+ * This program is free software: you can redistribute it and/or modify it under the terms of
+ * the GNU Affero General Public License as published by the Free Software Foundation,
+ * either version 3 of the License, or (at your option) any later version.
+ * <p/>
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU Affero General Public License for more details.
+ * <p/>
+ * You should have received a copy of the GNU Affero General Public License along with this program.
+ * If not, see <https://www.gnu.org/licenses/>.
+ */
+
 package it.eng.parer.crypto.model.exceptions;
 
 import java.util.List;
+
+import org.apache.commons.lang3.StringUtils;
+
+import it.eng.parer.crypto.model.verifica.input.CryptoDataToValidateMetadata;
 
 /**
  * Errori gestiti dell'applicazione. Sono classificati nell'enum {@link ExceptionType} e specificati nell'enum
@@ -15,7 +36,7 @@ public interface ParerError {
      */
     public enum ExceptionType {
         PARAMETER_VALIDATION, GENERIC, NOT_FOUND, CA, CERTIFICATE, CRL, TIME, SIGNATURE_VERIFICATION
-    };
+    }
 
     /**
      * Codici di errore specifici che vanno a dettagliare l'{@link ExceptionType}.
@@ -80,7 +101,7 @@ public interface ParerError {
             throw new IllegalArgumentException("Impossibile trovare un codice di errore per la stringa " + urlFriendly);
         }
 
-    };
+    }
 
     public String getMessage();
 
@@ -89,4 +110,13 @@ public interface ParerError {
     public ErrorCode getCode();
 
     public String getMoreInfo();
+
+    public CryptoDataToValidateMetadata getMetadata();
+
+    default String stdMsgPrefix() {
+        return (getMetadata() != null && getMetadata().getComponentePrincipale() != null ? "[ ID Documento = "
+                + StringUtils.defaultIfBlank(getMetadata().getComponentePrincipale().getId(), "<id non presente>")
+                + " ] " : "");
+    }
+
 }

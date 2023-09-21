@@ -15,37 +15,35 @@
  * If not, see <https://www.gnu.org/licenses/>.
  */
 
-package it.eng.parer.crypto.model;
+package it.eng.parer.crypto.model.verifica.input;
 
-import java.io.Serializable;
-import java.math.BigInteger;
-import java.util.Date;
+import jakarta.validation.constraints.NotNull;
 
 /**
+ * Modello per la versione 3 del servizio di verifica firma crypto
  *
  * @author Snidero_L
  */
-public class ParerRevokedCertificate implements Serializable {
+public class CryptoDataToValidateBody {
 
-    private static final long serialVersionUID = -6359738353141877449L;
+    private CryptoDataToValidateMetadata metadata;
+    @NotNull(message = "Necessario indicare l'elemento da verificare")
+    private CryptoDataToValidateDataUri data;
 
-    private BigInteger serialNumber;
-    private Date revocationDate;
-
-    public BigInteger getSerialNumber() {
-        return serialNumber;
+    public CryptoDataToValidateMetadata getMetadata() {
+        return metadata;
     }
 
-    public void setSerialNumber(BigInteger serialNumber) {
-        this.serialNumber = serialNumber;
+    public void setMetadata(CryptoDataToValidateMetadata metadata) {
+        this.metadata = metadata;
     }
 
-    public Date getRevocationDate() {
-        return revocationDate;
+    public CryptoDataToValidateDataUri getData() {
+        return data;
     }
 
-    public void setRevocationDate(Date revocationDate) {
-        this.revocationDate = revocationDate;
+    public void setData(CryptoDataToValidateDataUri data) {
+        this.data = data;
     }
 
 }

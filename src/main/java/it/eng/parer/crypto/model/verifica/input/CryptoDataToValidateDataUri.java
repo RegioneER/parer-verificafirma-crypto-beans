@@ -18,46 +18,45 @@
 package it.eng.parer.crypto.model.verifica.input;
 
 import java.io.Serializable;
+import java.net.URI;
+import java.util.List;
 
 import jakarta.validation.constraints.NotNull;
 
 /**
+ * Modello per i file presenti su un URI (tendenzialmente utilizzando le PRE-SIGNED URL dell'object storage).
  *
  * @author Snidero_L
  */
-public class CryptoDocumentoVersato implements Serializable {
+public class CryptoDataToValidateDataUri implements Serializable {
 
-    private static final long serialVersionUID = 583386965032180586L;
-    @NotNull(message = "Necessario indicare il nome del componente versato")
-    private String nome;
+    @NotNull(message = "Il percorso del componente principale deve essere valorizzate correttamente")
+    private URI contenuto;
+    private List<URI> firme;
+    private List<URI> marche;
 
-    private byte[] contenuto;
-
-    public CryptoDocumentoVersato() {
-        this.nome = "default";
-    }
-
-    public CryptoDocumentoVersato(String nome, byte[] contenuto) {
-        this.nome = nome;
-        this.contenuto = contenuto;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public CryptoDocumentoVersato setNome(String nome) {
-        this.nome = nome;
-        return this;
-    }
-
-    public byte[] getContenuto() {
+    public URI getContenuto() {
         return contenuto;
     }
 
-    public CryptoDocumentoVersato setContenuto(byte[] contenuto) {
+    public void setContenuto(URI contenuto) {
         this.contenuto = contenuto;
-        return this;
+    }
+
+    public List<URI> getFirme() {
+        return firme;
+    }
+
+    public void setFirme(List<URI> firme) {
+        this.firme = firme;
+    }
+
+    public List<URI> getMarche() {
+        return marche;
+    }
+
+    public void setMarche(List<URI> marche) {
+        this.marche = marche;
     }
 
 }
