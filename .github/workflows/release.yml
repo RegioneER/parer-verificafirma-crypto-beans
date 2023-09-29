@@ -16,4 +16,4 @@ jobs:
     with:
       version: ${{ inputs.version }}
       pat: ${{ inputs.pat }}
-      java: '17'
+      java: '8'
