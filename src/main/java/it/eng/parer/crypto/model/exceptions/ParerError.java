@@ -35,7 +35,8 @@ public interface ParerError {
      * Ambito dell'eccezione, sostanzialmente uno per <i>service</i> implementato.
      */
     public enum ExceptionType {
-        PARAMETER_VALIDATION, GENERIC, NOT_FOUND, CA, CERTIFICATE, CRL, TIME, SIGNATURE_VERIFICATION
+        PARAMETER_VALIDATION, GENERIC, NOT_FOUND, CA, CERTIFICATE, CRL, TIME, SIGNATURE_VERIFICATION,
+        SIGNATURE_EXTRACTION
     }
 
     /**
@@ -58,7 +59,8 @@ public interface ParerError {
         CERT_EXCEPTION("cert-exception", ExceptionType.CERTIFICATE), //
         CERT_PROVIDER_ERROR("cert-provider-exception", ExceptionType.CERTIFICATE), //
         SIGNATURE_VERIFICATION_IO("signature-io-exception", ExceptionType.SIGNATURE_VERIFICATION), //
-        SIGNATURE_WRONG_PARAMETER("signature-wrong-parameters", ExceptionType.SIGNATURE_VERIFICATION);
+        SIGNATURE_WRONG_PARAMETER("signature-wrong-parameters", ExceptionType.SIGNATURE_VERIFICATION),
+        SIGNATURE_FORMAT("signature-format", ExceptionType.SIGNATURE_EXTRACTION);
 
         ErrorCode(String urlFriendly, ExceptionType type) {
             this.urlFriendly = urlFriendly;
