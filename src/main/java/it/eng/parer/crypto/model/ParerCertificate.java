@@ -155,50 +155,50 @@ public class ParerCertificate implements Serializable {
      * @Override public void checkValidity() throws CertificateExpiredException, CertificateNotYetValidException { throw
      * new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools |
      * Templates. }
-     * 
+     *
      * @Override public void checkValidity(Date date) throws CertificateExpiredException,
      * CertificateNotYetValidException { throw new UnsupportedOperationException("Not supported yet."); //To change body
      * of generated methods, choose Tools | Templates. }
-     * 
+     *
      * @Override public int getVersion() { throw new UnsupportedOperationException("Not supported yet."); //To change
      * body of generated methods, choose Tools | Templates. }
-     * 
+     *
      * @Override public Principal getIssuerDN() { throw new UnsupportedOperationException("Not supported yet."); //To
      * change body of generated methods, choose Tools | Templates. }
-     * 
+     *
      * @Override public Principal getSubjectDN() { throw new UnsupportedOperationException("Not supported yet."); //To
      * change body of generated methods, choose Tools | Templates. }
-     * 
+     *
      * @Override public String getSigAlgName() { throw new UnsupportedOperationException("Not supported yet."); //To
      * change body of generated methods, choose Tools | Templates. }
-     * 
+     *
      * @Override public String getSigAlgOID() { throw new UnsupportedOperationException("Not supported yet."); //To
      * change body of generated methods, choose Tools | Templates. }
-     * 
+     *
      * @Override public byte[] getSigAlgParams() { throw new UnsupportedOperationException("Not supported yet."); //To
      * change body of generated methods, choose Tools | Templates. }
-     * 
+     *
      * @Override public byte[] getEncoded() throws CertificateEncodingException { throw new
      * UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools |
      * Templates. }
-     * 
+     *
      * @Override public void verify(PublicKey key) throws CertificateException, NoSuchAlgorithmException,
      * InvalidKeyException, NoSuchProviderException, SignatureException { throw new
      * UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools |
      * Templates. }
-     * 
+     *
      * @Override public void verify(PublicKey key, String sigProvider) throws CertificateException,
      * NoSuchAlgorithmException, InvalidKeyException, NoSuchProviderException, SignatureException { throw new
      * UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools |
      * Templates. }
-     * 
+     *
      * @Override public String toString() { throw new UnsupportedOperationException("Not supported yet."); //To change
      * body of generated methods, choose Tools | Templates. }
-     * 
+     *
      * @Override public PublicKey getPublicKey() { throw new UnsupportedOperationException("Not supported yet."); //To
      * change body of generated methods, choose Tools | Templates. }
-     * 
-     * 
+     *
+     *
      */
 
 }

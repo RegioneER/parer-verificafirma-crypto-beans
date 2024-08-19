@@ -87,9 +87,9 @@ public interface ParerError {
          *
          * @param urlFriendly
          *            stringa in input del codice "web friendly".
-         * 
+         *
          * @return transcodifica di {@link ErrorCode} a partire dalla stringa in input
-         * 
+         *
          * @throws IllegalArgumentException
          *             nel caso in cui la stringa non sia riconosciuta
          */

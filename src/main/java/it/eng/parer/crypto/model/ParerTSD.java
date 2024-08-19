@@ -23,7 +23,7 @@ import java.util.List;
 
 /**
  * Timestamp token (per generare i TSD)
- * 
+ *
  * @author Snidero_L
  */
 public class ParerTSD implements Serializable {

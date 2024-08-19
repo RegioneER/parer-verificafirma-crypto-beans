@@ -102,7 +102,7 @@ public final class TipologiaDataRiferimento implements Serializable {
      *
      * @param dataVersamento
      *            data di versamento
-     * 
+     *
      * @return Tipologia verifica per la data di versamento
      */
     public static final TipologiaDataRiferimento verificaDataVersamento(long dataVersamento) {
@@ -124,7 +124,7 @@ public final class TipologiaDataRiferimento implements Serializable {
      *
      * @param dataSpecifica
      *            data di verifica
-     * 
+     *
      * @return Tipologia di verifca per la data specifica
      */
     public static final TipologiaDataRiferimento verificaAllaDataSpecifica(long dataSpecifica) {
