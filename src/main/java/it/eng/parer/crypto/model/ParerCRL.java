@@ -148,7 +148,7 @@ public class ParerCRL implements Serializable {
      *            DN dell'authority che ha emesso il certificato.
      * @param authKeyID
      *            ID dell'authority che ha emesso il certificato.
-     * 
+     *
      * @return uniqueID della CRL, ovvero l'MD5 tra subjectDN a authKeyID.
      */
     public static String calcolaUniqueId(String subjectDN, String authKeyID) {

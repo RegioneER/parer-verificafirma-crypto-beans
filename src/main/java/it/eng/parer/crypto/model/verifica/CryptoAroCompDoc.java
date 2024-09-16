@@ -576,7 +576,7 @@ public class CryptoAroCompDoc implements Serializable {
      *
      * @param nomeComponenteVersato
      *            identificativo del componente versato
-     * 
+     *
      * @return lista contentente le firme associate al componente. Non restituisce mai NULL.
      */
     public List<CryptoAroFirmaComp> getFirme(String nomeComponenteVersato) {
@@ -594,7 +594,7 @@ public class CryptoAroCompDoc implements Serializable {
      *
      * @param nomeComponenteVersato
      *            identificativo del componente versato
-     * 
+     *
      * @return lista contentente le marche associate al componente. Non restituisce mai NULL.
      */
     public List<CryptoAroMarcaComp> getMarche(final String nomeComponenteVersato) {
