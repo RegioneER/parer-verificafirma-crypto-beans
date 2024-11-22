@@ -47,6 +47,7 @@ public class TestReport {
      *
      * @throws JAXBException
      */
+    @SuppressWarnings({ "rawtypes", "unchecked" })
     @Test
     public void testMarshaller() throws JAXBException {
 

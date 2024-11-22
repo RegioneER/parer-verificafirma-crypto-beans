@@ -30,6 +30,8 @@ import jakarta.validation.constraints.NotNull;
  */
 public class CryptoDataToValidateDataUri implements Serializable {
 
+    private static final long serialVersionUID = 2129598057865119908L;
+
     @NotNull(message = "Il percorso del componente principale deve essere valorizzate correttamente")
     private URI contenuto;
     private List<URI> firme;
