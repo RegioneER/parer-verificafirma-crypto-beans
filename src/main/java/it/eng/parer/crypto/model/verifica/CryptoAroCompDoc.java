@@ -1,18 +1,14 @@
 /*
  * Engineering Ingegneria Informatica S.p.A.
  *
- * Copyright (C) 2023 Regione Emilia-Romagna
- * <p/>
- * This program is free software: you can redistribute it and/or modify it under the terms of
- * the GNU Affero General Public License as published by the Free Software Foundation,
- * either version 3 of the License, or (at your option) any later version.
- * <p/>
- * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
- * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- * See the GNU Affero General Public License for more details.
- * <p/>
- * You should have received a copy of the GNU Affero General Public License along with this program.
- * If not, see <https://www.gnu.org/licenses/>.
+ * Copyright (C) 2023 Regione Emilia-Romagna <p/> This program is free software: you can
+ * redistribute it and/or modify it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the License, or (at your option)
+ * any later version. <p/> This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+ * PARTICULAR PURPOSE. See the GNU Affero General Public License for more details. <p/> You should
+ * have received a copy of the GNU Affero General Public License along with this program. If not,
+ * see <https://www.gnu.org/licenses/>.
  */
 
 package it.eng.parer.crypto.model.verifica;
@@ -115,14 +111,15 @@ public class CryptoAroCompDoc implements Serializable {
     private CryptoProfiloVerifica profiloValidazione;
 
     public CryptoAroCompDoc() {
+	// empty
     }
 
     public String getIdComponente() {
-        return idComponente;
+	return idComponente;
     }
 
     public void setIdComponente(String idComponente) {
-        this.idComponente = idComponente;
+	this.idComponente = idComponente;
     }
 
     // public long getIdCompDoc() {
@@ -133,179 +130,179 @@ public class CryptoAroCompDoc implements Serializable {
     // this.idCompDoc = idCompDoc;
     // }
     public String getCdEncodingHashFileCalc() {
-        return this.cdEncodingHashFileCalc;
+	return this.cdEncodingHashFileCalc;
     }
 
     public void setCdEncodingHashFileCalc(String cdEncodingHashFileCalc) {
-        this.cdEncodingHashFileCalc = cdEncodingHashFileCalc;
+	this.cdEncodingHashFileCalc = cdEncodingHashFileCalc;
     }
 
     public String getCdEncodingHashFileVers() {
-        return this.cdEncodingHashFileVers;
+	return this.cdEncodingHashFileVers;
     }
 
     public void setCdEncodingHashFileVers(String cdEncodingHashFileVers) {
-        this.cdEncodingHashFileVers = cdEncodingHashFileVers;
+	this.cdEncodingHashFileVers = cdEncodingHashFileVers;
     }
 
     public String getDlUrnCompVers() {
-        return this.dlUrnCompVers;
+	return this.dlUrnCompVers;
     }
 
     public void setDlUrnCompVers(String dlUrnCompVers) {
-        this.dlUrnCompVers = dlUrnCompVers;
+	this.dlUrnCompVers = dlUrnCompVers;
     }
 
     public String getDsAlgoHashFileCalc() {
-        return this.dsAlgoHashFileCalc;
+	return this.dsAlgoHashFileCalc;
     }
 
     public void setDsAlgoHashFileCalc(String dsAlgoHashFileCalc) {
-        this.dsAlgoHashFileCalc = dsAlgoHashFileCalc;
+	this.dsAlgoHashFileCalc = dsAlgoHashFileCalc;
     }
 
     public String getDsAlgoHashFileVers() {
-        return this.dsAlgoHashFileVers;
+	return this.dsAlgoHashFileVers;
     }
 
     public void setDsAlgoHashFileVers(String dsAlgoHashFileVers) {
-        this.dsAlgoHashFileVers = dsAlgoHashFileVers;
+	this.dsAlgoHashFileVers = dsAlgoHashFileVers;
     }
 
     public String getDsEsitoVerifFirmeDtVers() {
-        return this.dsEsitoVerifFirmeDtVers;
+	return this.dsEsitoVerifFirmeDtVers;
     }
 
     public void setDsEsitoVerifFirmeDtVers(String dsEsitoVerifFirmeDtVers) {
-        this.dsEsitoVerifFirmeDtVers = dsEsitoVerifFirmeDtVers;
+	this.dsEsitoVerifFirmeDtVers = dsEsitoVerifFirmeDtVers;
     }
 
     public String getDsFormatoRapprCalc() {
-        return this.dsFormatoRapprCalc;
+	return this.dsFormatoRapprCalc;
     }
 
     public void setDsFormatoRapprCalc(String dsFormatoRapprCalc) {
-        this.dsFormatoRapprCalc = dsFormatoRapprCalc;
+	this.dsFormatoRapprCalc = dsFormatoRapprCalc;
     }
 
     public String getDsFormatoRapprEstesoCalc() {
-        return this.dsFormatoRapprEstesoCalc;
+	return this.dsFormatoRapprEstesoCalc;
     }
 
     public void setDsFormatoRapprEstesoCalc(String dsFormatoRapprEstesoCalc) {
-        this.dsFormatoRapprEstesoCalc = dsFormatoRapprEstesoCalc;
+	this.dsFormatoRapprEstesoCalc = dsFormatoRapprEstesoCalc;
     }
 
     public String getDsHashFileCalc() {
-        return this.dsHashFileCalc;
+	return this.dsHashFileCalc;
     }
 
     public void setDsHashFileCalc(String dsHashFileCalc) {
-        this.dsHashFileCalc = dsHashFileCalc;
+	this.dsHashFileCalc = dsHashFileCalc;
     }
 
     public String getDsHashFileContr() {
-        return this.dsHashFileContr;
+	return this.dsHashFileContr;
     }
 
     public void setDsHashFileContr(String dsHashFileContr) {
-        this.dsHashFileContr = dsHashFileContr;
+	this.dsHashFileContr = dsHashFileContr;
     }
 
     public String getDsHashFileVers() {
-        return this.dsHashFileVers;
+	return this.dsHashFileVers;
     }
 
     public void setDsHashFileVers(String dsHashFileVers) {
-        this.dsHashFileVers = dsHashFileVers;
+	this.dsHashFileVers = dsHashFileVers;
     }
 
     public String getDsIdCompVers() {
-        return this.dsIdCompVers;
+	return this.dsIdCompVers;
     }
 
     public void setDsIdCompVers(String dsIdCompVers) {
-        this.dsIdCompVers = dsIdCompVers;
+	this.dsIdCompVers = dsIdCompVers;
     }
 
     public String getDsMsgEsitoContrFormato() {
-        return this.dsMsgEsitoContrFormato;
+	return this.dsMsgEsitoContrFormato;
     }
 
     public void setDsMsgEsitoContrFormato(String dsMsgEsitoContrFormato) {
-        this.dsMsgEsitoContrFormato = dsMsgEsitoContrFormato;
+	this.dsMsgEsitoContrFormato = dsMsgEsitoContrFormato;
     }
 
     public String getDsMsgEsitoVerifFirme() {
-        return this.dsMsgEsitoVerifFirme;
+	return this.dsMsgEsitoVerifFirme;
     }
 
     public void setDsMsgEsitoVerifFirme(String dsMsgEsitoVerifFirme) {
-        this.dsMsgEsitoVerifFirme = dsMsgEsitoVerifFirme;
+	this.dsMsgEsitoVerifFirme = dsMsgEsitoVerifFirme;
     }
 
     public String getDsNomeCompVers() {
-        return this.dsNomeCompVers;
+	return this.dsNomeCompVers;
     }
 
     public void setDsNomeCompVers(String dsNomeCompVers) {
-        this.dsNomeCompVers = dsNomeCompVers;
+	this.dsNomeCompVers = dsNomeCompVers;
     }
 
     public String getDsNomeFileArk() {
-        return dsNomeFileArk;
+	return dsNomeFileArk;
     }
 
     public void setDsNomeFileArk(String dsNomeFileArk) {
-        this.dsNomeFileArk = dsNomeFileArk;
+	this.dsNomeFileArk = dsNomeFileArk;
     }
 
     public String getDsRifTempVers() {
-        return this.dsRifTempVers;
+	return this.dsRifTempVers;
     }
 
     public void setDsRifTempVers(String dsRifTempVers) {
-        this.dsRifTempVers = dsRifTempVers;
+	this.dsRifTempVers = dsRifTempVers;
     }
 
     public String getDsUrnCompCalc() {
-        return this.dsUrnCompCalc;
+	return this.dsUrnCompCalc;
     }
 
     public void setDsUrnCompCalc(String dsUrnCompCalc) {
-        this.dsUrnCompCalc = dsUrnCompCalc;
+	this.dsUrnCompCalc = dsUrnCompCalc;
     }
 
     public String getFlCompFirmato() {
-        return this.flCompFirmato;
+	return this.flCompFirmato;
     }
 
     public void setFlCompFirmato(String flCompFirmato) {
-        this.flCompFirmato = flCompFirmato;
+	this.flCompFirmato = flCompFirmato;
     }
 
     public String getFlNoCalcFmtVerifFirme() {
-        return this.flNoCalcFmtVerifFirme;
+	return this.flNoCalcFmtVerifFirme;
     }
 
     public void setFlNoCalcFmtVerifFirme(String flNoCalcFmtVerifFirme) {
-        this.flNoCalcFmtVerifFirme = flNoCalcFmtVerifFirme;
+	this.flNoCalcFmtVerifFirme = flNoCalcFmtVerifFirme;
     }
 
     public String getFlNoCalcHashFile() {
-        return this.flNoCalcHashFile;
+	return this.flNoCalcHashFile;
     }
 
     public void setFlNoCalcHashFile(String flNoCalcHashFile) {
-        this.flNoCalcHashFile = flNoCalcHashFile;
+	this.flNoCalcHashFile = flNoCalcHashFile;
     }
 
     public String getFlRifTempDataFirmaVers() {
-        return this.flRifTempDataFirmaVers;
+	return this.flRifTempDataFirmaVers;
     }
 
     public void setFlRifTempDataFirmaVers(String flRifTempDataFirmaVers) {
-        this.flRifTempDataFirmaVers = flRifTempDataFirmaVers;
+	this.flRifTempDataFirmaVers = flRifTempDataFirmaVers;
     }
 
     // public BigDecimal getIdStrut() {
@@ -316,67 +313,67 @@ public class CryptoAroCompDoc implements Serializable {
     // this.idStrut = idStrut;
     // }
     public BigDecimal getNiOrdCompDoc() {
-        return this.niOrdCompDoc;
+	return this.niOrdCompDoc;
     }
 
     public void setNiOrdCompDoc(BigDecimal niOrdCompDoc) {
-        this.niOrdCompDoc = niOrdCompDoc;
+	this.niOrdCompDoc = niOrdCompDoc;
     }
 
     public BigDecimal getNiSizeFileCalc() {
-        return this.niSizeFileCalc;
+	return this.niSizeFileCalc;
     }
 
     public void setNiSizeFileCalc(BigDecimal niSizeFileCalc) {
-        this.niSizeFileCalc = niSizeFileCalc;
+	this.niSizeFileCalc = niSizeFileCalc;
     }
 
     public String getTiEsitoContrFormatoFile() {
-        return this.tiEsitoContrFormatoFile;
+	return this.tiEsitoContrFormatoFile;
     }
 
     public void setTiEsitoContrFormatoFile(String tiEsitoContrFormatoFile) {
-        this.tiEsitoContrFormatoFile = tiEsitoContrFormatoFile;
+	this.tiEsitoContrFormatoFile = tiEsitoContrFormatoFile;
     }
 
     public String getTiEsitoContrHashVers() {
-        return this.tiEsitoContrHashVers;
+	return this.tiEsitoContrHashVers;
     }
 
     public void setTiEsitoContrHashVers(String tiEsitoContrHashVers) {
-        this.tiEsitoContrHashVers = tiEsitoContrHashVers;
+	this.tiEsitoContrHashVers = tiEsitoContrHashVers;
     }
 
     public String getTiEsitoVerifFirme() {
-        return this.tiEsitoVerifFirme;
+	return this.tiEsitoVerifFirme;
     }
 
     public void setTiEsitoVerifFirme(String tiEsitoVerifFirme) {
-        this.tiEsitoVerifFirme = tiEsitoVerifFirme;
+	this.tiEsitoVerifFirme = tiEsitoVerifFirme;
     }
 
     public String getTiEsitoVerifFirmeDtVers() {
-        return this.tiEsitoVerifFirmeDtVers;
+	return this.tiEsitoVerifFirmeDtVers;
     }
 
     public void setTiEsitoVerifFirmeDtVers(String tiEsitoVerifFirmeDtVers) {
-        this.tiEsitoVerifFirmeDtVers = tiEsitoVerifFirmeDtVers;
+	this.tiEsitoVerifFirmeDtVers = tiEsitoVerifFirmeDtVers;
     }
 
     public String getTiSupportoComp() {
-        return this.tiSupportoComp;
+	return this.tiSupportoComp;
     }
 
     public void setTiSupportoComp(String tiSupportoComp) {
-        this.tiSupportoComp = tiSupportoComp;
+	this.tiSupportoComp = tiSupportoComp;
     }
 
     public Date getTmRifTempVers() {
-        return this.tmRifTempVers;
+	return this.tmRifTempVers;
     }
 
     public void setTmRifTempVers(Date tmRifTempVers) {
-        this.tmRifTempVers = tmRifTempVers;
+	this.tmRifTempVers = tmRifTempVers;
     }
 
     // bi-directional many-to-one association to AroBustaCrittog
@@ -468,20 +465,20 @@ public class CryptoAroCompDoc implements Serializable {
     // }
     // bi-directional many-to-one association to AroFirmaComp
     public List<CryptoAroFirmaComp> getAroFirmaComps() {
-        return this.aroFirmaComps;
+	return this.aroFirmaComps;
     }
 
     public void setAroFirmaComps(List<CryptoAroFirmaComp> aroFirmaComps) {
-        this.aroFirmaComps = aroFirmaComps;
+	this.aroFirmaComps = aroFirmaComps;
     }
 
     // bi-directional many-to-one association to AroMarcaComp
     public List<CryptoAroMarcaComp> getAroMarcaComps() {
-        return this.aroMarcaComps;
+	return this.aroMarcaComps;
     }
 
     public void setAroMarcaComps(List<CryptoAroMarcaComp> aroMarcaComps) {
-        this.aroMarcaComps = aroMarcaComps;
+	this.aroMarcaComps = aroMarcaComps;
     }
 
     // bi-directional many-to-one association to AroUsoXsdDatiSpec
@@ -516,7 +513,8 @@ public class CryptoAroCompDoc implements Serializable {
     // return this.aroCompIndiceAipDaElabs;
     // }
     //
-    // public void setAroCompIndiceAipDaElabs(List<AroCompIndiceAipDaElab> aroCompIndiceAipDaElabs) {
+    // public void setAroCompIndiceAipDaElabs(List<AroCompIndiceAipDaElab> aroCompIndiceAipDaElabs)
+    // {
     // this.aroCompIndiceAipDaElabs = aroCompIndiceAipDaElabs;
     // }
     //
@@ -574,44 +572,44 @@ public class CryptoAroCompDoc implements Serializable {
     /**
      * Metodo helper per ottenere tutte le firme associate ad un componente versato.
      *
-     * @param nomeComponenteVersato
-     *            identificativo del componente versato
+     * @param nomeComponenteVersato identificativo del componente versato
      *
      * @return lista contentente le firme associate al componente. Non restituisce mai NULL.
      */
     public List<CryptoAroFirmaComp> getFirme(String nomeComponenteVersato) {
-        if (aroFirmaComps == null) {
-            return Collections.emptyList();
-        }
+	if (aroFirmaComps == null) {
+	    return Collections.emptyList();
+	}
 
-        List<CryptoAroFirmaComp> result = aroFirmaComps.stream()
-                .filter(m -> m.getIdFirma().equals(nomeComponenteVersato)).collect(Collectors.toList());
-        return result;
+	List<CryptoAroFirmaComp> result = aroFirmaComps.stream()
+		.filter(m -> m.getIdFirma().equals(nomeComponenteVersato))
+		.collect(Collectors.toList());
+	return result;
     }
 
     /**
      * Metodo helper per ottenere tutte le marche associate ad un componente versato.
      *
-     * @param nomeComponenteVersato
-     *            identificativo del componente versato
+     * @param nomeComponenteVersato identificativo del componente versato
      *
      * @return lista contentente le marche associate al componente. Non restituisce mai NULL.
      */
     public List<CryptoAroMarcaComp> getMarche(final String nomeComponenteVersato) {
-        if (aroMarcaComps == null) {
-            return Collections.emptyList();
-        }
-        List<CryptoAroMarcaComp> result = aroMarcaComps.stream()
-                .filter(m -> m.getIdMarca().equals(nomeComponenteVersato)).collect(Collectors.toList());
-        return result;
+	if (aroMarcaComps == null) {
+	    return Collections.emptyList();
+	}
+	List<CryptoAroMarcaComp> result = aroMarcaComps.stream()
+		.filter(m -> m.getIdMarca().equals(nomeComponenteVersato))
+		.collect(Collectors.toList());
+	return result;
     }
 
     public String getValidatorVersion() {
-        return validatorVersion;
+	return validatorVersion;
     }
 
     public void setValidatorVersion(String validatorVersion) {
-        this.validatorVersion = validatorVersion;
+	this.validatorVersion = validatorVersion;
     }
 
     // public Map<String, String> getMimeComponenti() {
@@ -622,51 +620,51 @@ public class CryptoAroCompDoc implements Serializable {
     // this.mimeComponenti = mimeComponenti;
     // }
     public void setLink(String link) {
-        this.link = link;
+	this.link = link;
     }
 
     public String getLink() {
-        return link;
+	return link;
     }
 
     public Date getInizioValidazione() {
-        return inizioValidazione;
+	return inizioValidazione;
     }
 
     public void setInizioValidazione(Date inizioValidazione) {
-        this.inizioValidazione = inizioValidazione;
+	this.inizioValidazione = inizioValidazione;
     }
 
     public Date getFineValidazione() {
-        return fineValidazione;
+	return fineValidazione;
     }
 
     public void setFineValidazione(Date fineValidazione) {
-        this.fineValidazione = fineValidazione;
+	this.fineValidazione = fineValidazione;
     }
 
     public String getTikaMimeComponentePrincipale() {
-        return tikaMimeComponentePrincipale;
+	return tikaMimeComponentePrincipale;
     }
 
     public void setTikaMimeComponentePrincipale(String tikaMimeComponentePrincipale) {
-        this.tikaMimeComponentePrincipale = tikaMimeComponentePrincipale;
+	this.tikaMimeComponentePrincipale = tikaMimeComponentePrincipale;
     }
 
     public String getLibraryVersion() {
-        return libraryVersion;
+	return libraryVersion;
     }
 
     public void setLibraryVersion(String libraryVersion) {
-        this.libraryVersion = libraryVersion;
+	this.libraryVersion = libraryVersion;
     }
 
     public void setProfiloValidazione(CryptoProfiloVerifica profiloValidazione) {
-        this.profiloValidazione = profiloValidazione;
+	this.profiloValidazione = profiloValidazione;
     }
 
     public CryptoProfiloVerifica getProfiloValidazione() {
-        return profiloValidazione;
+	return profiloValidazione;
     }
 
 }

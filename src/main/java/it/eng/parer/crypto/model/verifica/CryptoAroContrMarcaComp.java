@@ -1,23 +1,19 @@
 /*
  * Engineering Ingegneria Informatica S.p.A.
  *
- * Copyright (C) 2023 Regione Emilia-Romagna
- * <p/>
- * This program is free software: you can redistribute it and/or modify it under the terms of
- * the GNU Affero General Public License as published by the Free Software Foundation,
- * either version 3 of the License, or (at your option) any later version.
- * <p/>
- * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
- * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- * See the GNU Affero General Public License for more details.
- * <p/>
- * You should have received a copy of the GNU Affero General Public License along with this program.
- * If not, see <https://www.gnu.org/licenses/>.
+ * Copyright (C) 2023 Regione Emilia-Romagna <p/> This program is free software: you can
+ * redistribute it and/or modify it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the License, or (at your option)
+ * any later version. <p/> This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+ * PARTICULAR PURPOSE. See the GNU Affero General Public License for more details. <p/> You should
+ * have received a copy of the GNU Affero General Public License along with this program. If not,
+ * see <https://www.gnu.org/licenses/>.
  */
 
 package it.eng.parer.crypto.model.verifica;
 
-//import it.eng.parer.entity.AroUsoCertifCaContrMarca;
+// import it.eng.parer.entity.AroUsoCertifCaContrMarca;
 import java.io.Serializable;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
@@ -43,6 +39,7 @@ public class CryptoAroContrMarcaComp implements Serializable {
     private List<CryptoAroUsoCertifCaContrMarca> aroUsoCertifCaContrMarcas;
 
     public CryptoAroContrMarcaComp() {
+	// empty
     }
 
     // public long getIdContrMarcaComp() {
@@ -53,27 +50,27 @@ public class CryptoAroContrMarcaComp implements Serializable {
     // this.idContrMarcaComp = idContrMarcaComp;
     // }
     public String getDsMsgEsitoContrMarca() {
-        return this.dsMsgEsitoContrMarca;
+	return this.dsMsgEsitoContrMarca;
     }
 
     public void setDsMsgEsitoContrMarca(String dsMsgEsitoContrMarca) {
-        this.dsMsgEsitoContrMarca = dsMsgEsitoContrMarca;
+	this.dsMsgEsitoContrMarca = dsMsgEsitoContrMarca;
     }
 
     public String getTiContr() {
-        return this.tiContr;
+	return this.tiContr;
     }
 
     public void setTiContr(String tiContr) {
-        this.tiContr = tiContr;
+	this.tiContr = tiContr;
     }
 
     public String getTiEsitoContrMarca() {
-        return this.tiEsitoContrMarca;
+	return this.tiEsitoContrMarca;
     }
 
     public void setTiEsitoContrMarca(String tiEsitoContrMarca) {
-        this.tiEsitoContrMarca = tiEsitoContrMarca;
+	this.tiEsitoContrMarca = tiEsitoContrMarca;
     }
 
     // public AroMarcaComp getAroMarcaComp() {
@@ -85,19 +82,20 @@ public class CryptoAroContrMarcaComp implements Serializable {
     // }
     //
     public CryptoFirCrl getFirCrl() {
-        return this.firCrl;
+	return this.firCrl;
     }
 
     public void setFirCrl(CryptoFirCrl firCrl) {
-        this.firCrl = firCrl;
+	this.firCrl = firCrl;
     }
 
     public List<CryptoAroUsoCertifCaContrMarca> getAroUsoCertifCaContrMarcas() {
-        return this.aroUsoCertifCaContrMarcas;
+	return this.aroUsoCertifCaContrMarcas;
     }
 
-    public void setAroUsoCertifCaContrMarcas(List<CryptoAroUsoCertifCaContrMarca> aroUsoCertifCaContrMarcas) {
-        this.aroUsoCertifCaContrMarcas = aroUsoCertifCaContrMarcas;
+    public void setAroUsoCertifCaContrMarcas(
+	    List<CryptoAroUsoCertifCaContrMarca> aroUsoCertifCaContrMarcas) {
+	this.aroUsoCertifCaContrMarcas = aroUsoCertifCaContrMarcas;
     }
 
 }
