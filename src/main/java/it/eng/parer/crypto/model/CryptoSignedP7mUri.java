@@ -1,18 +1,14 @@
 /*
  * Engineering Ingegneria Informatica S.p.A.
  *
- * Copyright (C) 2023 Regione Emilia-Romagna
- * <p/>
- * This program is free software: you can redistribute it and/or modify it under the terms of
- * the GNU Affero General Public License as published by the Free Software Foundation,
- * either version 3 of the License, or (at your option) any later version.
- * <p/>
- * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
- * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- * See the GNU Affero General Public License for more details.
- * <p/>
- * You should have received a copy of the GNU Affero General Public License along with this program.
- * If not, see <https://www.gnu.org/licenses/>.
+ * Copyright (C) 2023 Regione Emilia-Romagna <p/> This program is free software: you can
+ * redistribute it and/or modify it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the License, or (at your option)
+ * any later version. <p/> This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+ * PARTICULAR PURPOSE. See the GNU Affero General Public License for more details. <p/> You should
+ * have received a copy of the GNU Affero General Public License along with this program. If not,
+ * see <https://www.gnu.org/licenses/>.
  */
 
 package it.eng.parer.crypto.model;
@@ -25,8 +21,8 @@ import org.apache.commons.lang3.StringUtils;
 import jakarta.validation.constraints.NotNull;
 
 /**
- * Modello per i file p7m su un URI (tendenzialmente utilizzando le PRE-SIGNED
- * URL dell'object storage).
+ * Modello per i file p7m su un URI (tendenzialmente utilizzando le PRE-SIGNED URL dell'object
+ * storage).
  */
 public class CryptoSignedP7mUri implements Serializable {
 
@@ -46,7 +42,7 @@ public class CryptoSignedP7mUri implements Serializable {
 	this.uri = uri;
 	this.originalFileName = StringUtils.EMPTY;
     }
-    
+
     public CryptoSignedP7mUri(URI uri, String originalFileName) {
 	super();
 	this.uri = uri;

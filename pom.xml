@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <artifactId>verificafirma-crypto-beans</artifactId>
-    <version>1.6.1-SNAPSHOT</version>
+    <version>1.7.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>Verifica firma crypto beans</name>
     <description>Libreria contenente i beans che integrano i modelli pojo per la verifica firma con microservizio crypto</description>
@@ -9,7 +9,7 @@
     <parent>
         <groupId>it.eng.parer</groupId>
         <artifactId>parer-pom</artifactId>
-        <version>6.4.1</version>
+        <version>7.1.0</version>
     </parent>
     
 
@@ -19,7 +19,6 @@
         <project.encoding>UTF-8</project.encoding>
         <!-- ereditata la versione utilizza da springboot 3.x dal progetto (crypto) di cui prima era un sottomodulo-->
         <jakarta.validation-api.version>3.0.2</jakarta.validation-api.version>
-        <junit.version>4.13.1</junit.version>
         <!-- Jaxb compliance java 11 (optional on java 8)  -->
         <jaxb.api.version>2.3.0</jaxb.api.version>
     </properties>
@@ -71,12 +70,13 @@
     		<version>${commons-lang3.version}</version>
 		</dependency>
 
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>        
-            <scope>test</scope>
-        </dependency>
+        <!-- Unit Test -->
+		<dependency>
+		    <groupId>org.junit.jupiter</groupId>
+		    <artifactId>junit-jupiter-api</artifactId>
+		    <version>${junit.version}</version>
+		    <scope>test</scope>
+		</dependency>
         <dependency>
 		    <groupId>javax.activation</groupId>
 		    <artifactId>activation</artifactId>

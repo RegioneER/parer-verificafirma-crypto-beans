@@ -1,18 +1,14 @@
 /*
  * Engineering Ingegneria Informatica S.p.A.
  *
- * Copyright (C) 2023 Regione Emilia-Romagna
- * <p/>
- * This program is free software: you can redistribute it and/or modify it under the terms of
- * the GNU Affero General Public License as published by the Free Software Foundation,
- * either version 3 of the License, or (at your option) any later version.
- * <p/>
- * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
- * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- * See the GNU Affero General Public License for more details.
- * <p/>
- * You should have received a copy of the GNU Affero General Public License along with this program.
- * If not, see <https://www.gnu.org/licenses/>.
+ * Copyright (C) 2023 Regione Emilia-Romagna <p/> This program is free software: you can
+ * redistribute it and/or modify it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the License, or (at your option)
+ * any later version. <p/> This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+ * PARTICULAR PURPOSE. See the GNU Affero General Public License for more details. <p/> You should
+ * have received a copy of the GNU Affero General Public License along with this program. If not,
+ * see <https://www.gnu.org/licenses/>.
  */
 
 package it.eng.parer.crypto.model.verifica;
@@ -43,6 +39,7 @@ public class CryptoAroContrFirmaComp implements Serializable {
     private List<CryptoAroUsoCertifCaContrComp> aroUsoCertifCaContrComps;
 
     public CryptoAroContrFirmaComp() {
+	// empty
     }
 
     // public long getIdContrFirmaComp() {
@@ -53,27 +50,27 @@ public class CryptoAroContrFirmaComp implements Serializable {
     // this.idContrFirmaComp = idContrFirmaComp;
     // }
     public String getDsMsgEsitoContrFirma() {
-        return this.dsMsgEsitoContrFirma;
+	return this.dsMsgEsitoContrFirma;
     }
 
     public void setDsMsgEsitoContrFirma(String dsMsgEsitoContrFirma) {
-        this.dsMsgEsitoContrFirma = dsMsgEsitoContrFirma;
+	this.dsMsgEsitoContrFirma = dsMsgEsitoContrFirma;
     }
 
     public String getTiContr() {
-        return this.tiContr;
+	return this.tiContr;
     }
 
     public void setTiContr(String tiContr) {
-        this.tiContr = tiContr;
+	this.tiContr = tiContr;
     }
 
     public String getTiEsitoContrFirma() {
-        return this.tiEsitoContrFirma;
+	return this.tiEsitoContrFirma;
     }
 
     public void setTiEsitoContrFirma(String tiEsitoContrFirma) {
-        this.tiEsitoContrFirma = tiEsitoContrFirma;
+	this.tiEsitoContrFirma = tiEsitoContrFirma;
     }
 
     // public AroFirmaComp getAroFirmaComp() {
@@ -84,27 +81,28 @@ public class CryptoAroContrFirmaComp implements Serializable {
     // this.aroFirmaComp = aroFirmaComp;
     // }
     public String getMimeType() {
-        return mimeType;
+	return mimeType;
     }
 
     public void setMimeType(String mimeType) {
-        this.mimeType = mimeType;
+	this.mimeType = mimeType;
     }
 
     public CryptoFirCrl getFirCrl() {
-        return this.firCrl;
+	return this.firCrl;
     }
 
     public void setFirCrl(CryptoFirCrl firCrl) {
-        this.firCrl = firCrl;
+	this.firCrl = firCrl;
     }
 
     public List<CryptoAroUsoCertifCaContrComp> getAroUsoCertifCaContrComps() {
-        return this.aroUsoCertifCaContrComps;
+	return this.aroUsoCertifCaContrComps;
     }
 
-    public void setAroUsoCertifCaContrComps(List<CryptoAroUsoCertifCaContrComp> aroUsoCertifCaContrComps) {
-        this.aroUsoCertifCaContrComps = aroUsoCertifCaContrComps;
+    public void setAroUsoCertifCaContrComps(
+	    List<CryptoAroUsoCertifCaContrComp> aroUsoCertifCaContrComps) {
+	this.aroUsoCertifCaContrComps = aroUsoCertifCaContrComps;
     }
 
 }

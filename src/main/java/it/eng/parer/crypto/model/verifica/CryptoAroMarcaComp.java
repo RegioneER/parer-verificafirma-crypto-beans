@@ -1,18 +1,14 @@
 /*
  * Engineering Ingegneria Informatica S.p.A.
  *
- * Copyright (C) 2023 Regione Emilia-Romagna
- * <p/>
- * This program is free software: you can redistribute it and/or modify it under the terms of
- * the GNU Affero General Public License as published by the Free Software Foundation,
- * either version 3 of the License, or (at your option) any later version.
- * <p/>
- * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
- * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- * See the GNU Affero General Public License for more details.
- * <p/>
- * You should have received a copy of the GNU Affero General Public License along with this program.
- * If not, see <https://www.gnu.org/licenses/>.
+ * Copyright (C) 2023 Regione Emilia-Romagna <p/> This program is free software: you can
+ * redistribute it and/or modify it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the License, or (at your option)
+ * any later version. <p/> This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+ * PARTICULAR PURPOSE. See the GNU Affero General Public License for more details. <p/> You should
+ * have received a copy of the GNU Affero General Public License along with this program. If not,
+ * see <https://www.gnu.org/licenses/>.
  */
 
 package it.eng.parer.crypto.model.verifica;
@@ -59,14 +55,15 @@ public class CryptoAroMarcaComp implements Serializable {
     private CryptoFirCertifCa firCertifCa;
 
     public CryptoAroMarcaComp() {
+	// empty
     }
 
     public String getIdMarca() {
-        return idMarca;
+	return idMarca;
     }
 
     public void setIdMarca(String idMarca) {
-        this.idMarca = idMarca;
+	this.idMarca = idMarca;
     }
 
     // public String getTikaMime() {
@@ -84,115 +81,115 @@ public class CryptoAroMarcaComp implements Serializable {
     // this.idMarcaComp = idMarcaComp;
     // }
     public String getDsAlgoMarca() {
-        return this.dsAlgoMarca;
+	return this.dsAlgoMarca;
     }
 
     public void setDsAlgoMarca(String dsAlgoMarca) {
-        this.dsAlgoMarca = dsAlgoMarca;
+	this.dsAlgoMarca = dsAlgoMarca;
     }
 
     public String getDsMarcaBase64() {
-        return this.dsMarcaBase64;
+	return this.dsMarcaBase64;
     }
 
     public void setDsMarcaBase64(String dsMarcaBase64) {
-        this.dsMarcaBase64 = dsMarcaBase64;
+	this.dsMarcaBase64 = dsMarcaBase64;
     }
 
     public String getDsMsgEsitoContrConforme() {
-        return this.dsMsgEsitoContrConforme;
+	return this.dsMsgEsitoContrConforme;
     }
 
     public void setDsMsgEsitoContrConforme(String dsMsgEsitoContrConforme) {
-        this.dsMsgEsitoContrConforme = dsMsgEsitoContrConforme;
+	this.dsMsgEsitoContrConforme = dsMsgEsitoContrConforme;
     }
 
     public String getDsMsgEsitoVerifMarca() {
-        return this.dsMsgEsitoVerifMarca;
+	return this.dsMsgEsitoVerifMarca;
     }
 
     public void setDsMsgEsitoVerifMarca(String dsMsgEsitoVerifMarca) {
-        this.dsMsgEsitoVerifMarca = dsMsgEsitoVerifMarca;
+	this.dsMsgEsitoVerifMarca = dsMsgEsitoVerifMarca;
     }
 
     public Date getDtScadMarca() {
-        return this.dtScadMarca;
+	return this.dtScadMarca;
     }
 
     public void setDtScadMarca(Date dtScadMarca) {
-        this.dtScadMarca = dtScadMarca;
+	this.dtScadMarca = dtScadMarca;
     }
 
     public BigDecimal getPgBusta() {
-        return this.pgBusta;
+	return this.pgBusta;
     }
 
     public void setPgBusta(BigDecimal pgBusta) {
-        this.pgBusta = pgBusta;
+	this.pgBusta = pgBusta;
     }
 
     public BigDecimal getPgMarca() {
-        return this.pgMarca;
+	return this.pgMarca;
     }
 
     public void setPgMarca(BigDecimal pgMarca) {
-        this.pgMarca = pgMarca;
+	this.pgMarca = pgMarca;
     }
 
     public String getTiEsitoContrConforme() {
-        return this.tiEsitoContrConforme;
+	return this.tiEsitoContrConforme;
     }
 
     public void setTiEsitoContrConforme(String tiEsitoContrConforme) {
-        this.tiEsitoContrConforme = tiEsitoContrConforme;
+	this.tiEsitoContrConforme = tiEsitoContrConforme;
     }
 
     public String getTiEsitoVerifMarca() {
-        return this.tiEsitoVerifMarca;
+	return this.tiEsitoVerifMarca;
     }
 
     public void setTiEsitoVerifMarca(String tiEsitoVerifMarca) {
-        this.tiEsitoVerifMarca = tiEsitoVerifMarca;
+	this.tiEsitoVerifMarca = tiEsitoVerifMarca;
     }
 
     public String getTiFormatoMarca() {
-        return this.tiFormatoMarca;
+	return this.tiFormatoMarca;
     }
 
     public void setTiFormatoMarca(String tiFormatoMarca) {
-        this.tiFormatoMarca = tiFormatoMarca;
+	this.tiFormatoMarca = tiFormatoMarca;
     }
 
     public String getTiMarcaTemp() {
-        return this.tiMarcaTemp;
+	return this.tiMarcaTemp;
     }
 
     public void setTiMarcaTemp(String tiMarcaTemp) {
-        this.tiMarcaTemp = tiMarcaTemp;
+	this.tiMarcaTemp = tiMarcaTemp;
     }
 
     public Date getTmMarcaTemp() {
-        return this.tmMarcaTemp;
+	return this.tmMarcaTemp;
     }
 
     public void setTmMarcaTemp(Date tmMarcaTemp) {
-        this.tmMarcaTemp = tmMarcaTemp;
+	this.tmMarcaTemp = tmMarcaTemp;
     }
 
     public List<CryptoAroContrMarcaComp> getAroContrMarcaComps() {
-        return this.aroContrMarcaComps;
+	return this.aroContrMarcaComps;
     }
 
     public void setAroContrMarcaComps(List<CryptoAroContrMarcaComp> aroContrMarcaComps) {
-        this.aroContrMarcaComps = aroContrMarcaComps;
+	this.aroContrMarcaComps = aroContrMarcaComps;
     }
 
     public List<CryptoAroFirmaComp> getAroFirmaComps() {
-        return this.aroFirmaComps;
+	return this.aroFirmaComps;
     }
 
     public void setAroFirmaComps(List<CryptoAroFirmaComp> aroFirmaComps) {
-        this.aroFirmaComps = aroFirmaComps;
+	this.aroFirmaComps = aroFirmaComps;
     }
 
     // public AroBustaCrittog getAroBustaCrittog() {
@@ -210,11 +207,11 @@ public class CryptoAroMarcaComp implements Serializable {
     // this.aroCompDoc = aroCompDoc;
     // }
     public CryptoFirCertifCa getFirCertifCa() {
-        return this.firCertifCa;
+	return this.firCertifCa;
     }
 
     public void setFirCertifCa(CryptoFirCertifCa firCertifCa) {
-        this.firCertifCa = firCertifCa;
+	this.firCertifCa = firCertifCa;
     }
 
 }
