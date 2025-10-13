@@ -14,7 +14,6 @@
 package it.eng.parer.crypto.model;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.assertFalse;
 
 import java.io.StringWriter;
 import java.math.BigDecimal;
@@ -101,7 +100,7 @@ public class TestReport {
 	assertTrue(xmlReport.contains("<nmFileDownload>Nuova CRL</nmFileDownload>"));
 	assertTrue(xmlReport.contains("<tiFilePerFirma>CRL</tiFilePerFirma>"));
 	assertTrue(xmlReport.contains("<niSerialCrl>42000000</niSerialCrl>"));
-	assertFalse(xmlReport.contains("blFilePerFirma"));
+	assertTrue(xmlReport.contains("blFilePerFirma"));
 
     }
 

@@ -14,10 +14,10 @@
 package it.eng.parer.crypto.model.verifica;
 
 import java.io.Serializable;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlTransient;
 
 @XmlRootElement(name = "firFilePerFirma")
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -25,7 +25,6 @@ public class CryptoFirFilePerFirma implements Serializable {
 
     private static final long serialVersionUID = 1L;
     // private long idFilePerFirma;
-    @XmlTransient
     private byte[] blFilePerFirma;
     private String nmFileDownload;
     private String tiFilePerFirma;
