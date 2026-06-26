@@ -30,7 +30,7 @@ public class CryptoFirUrlDistribCrl implements Serializable {
     // private FirCertifCa firCertifCa;
 
     public CryptoFirUrlDistribCrl() {
-	// empty
+        // empty
     }
 
     // public long getIdUrlDistribCrl() {
@@ -41,19 +41,19 @@ public class CryptoFirUrlDistribCrl implements Serializable {
     // this.idUrlDistribCrl = idUrlDistribCrl;
     // }
     public String getDlUrlDistribCrl() {
-	return this.dlUrlDistribCrl;
+        return this.dlUrlDistribCrl;
     }
 
     public void setDlUrlDistribCrl(String dlUrlDistribCrl) {
-	this.dlUrlDistribCrl = dlUrlDistribCrl;
+        this.dlUrlDistribCrl = dlUrlDistribCrl;
     }
 
     public BigDecimal getNiOrdUrlDistribCrl() {
-	return this.niOrdUrlDistribCrl;
+        return this.niOrdUrlDistribCrl;
     }
 
     public void setNiOrdUrlDistribCrl(BigDecimal niOrdUrlDistribCrl) {
-	this.niOrdUrlDistribCrl = niOrdUrlDistribCrl;
+        this.niOrdUrlDistribCrl = niOrdUrlDistribCrl;
     }
 
     // public FirCertifCa getFirCertifCa() {

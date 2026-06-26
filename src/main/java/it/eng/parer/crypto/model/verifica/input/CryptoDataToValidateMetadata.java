@@ -47,56 +47,56 @@ public class CryptoDataToValidateMetadata implements Serializable {
     @NotNull(message = "La data di riferimento deve essere valorizzata")
     @DataRiferimento(message = "La tipologia della data di riferimento deve essere valorizzata correttamente")
     private TipologiaDataRiferimento tipologiaDataRiferimento = TipologiaDataRiferimento
-	    .verificaDefault();
+            .verificaDefault();
 
     public CryptoProfiloVerifica getProfiloVerifica() {
-	return profiloVerifica;
+        return profiloVerifica;
     }
 
     public void setProfiloVerifica(CryptoProfiloVerifica profiloVerifica) {
-	this.profiloVerifica = profiloVerifica;
+        this.profiloVerifica = profiloVerifica;
     }
 
     public void setTipologiaDataRiferimento(TipologiaDataRiferimento tipologiaDataRiferimento) {
-	this.tipologiaDataRiferimento = tipologiaDataRiferimento;
+        this.tipologiaDataRiferimento = tipologiaDataRiferimento;
     }
 
     public TipologiaDataRiferimento getTipologiaDataRiferimento() {
-	return tipologiaDataRiferimento;
+        return tipologiaDataRiferimento;
     }
 
     public String getUuid() {
-	return uuid;
+        return uuid;
     }
 
     public void setUuid(String uuid) {
-	this.uuid = uuid;
+        this.uuid = uuid;
     }
 
     public CryptoDataToValidateMetadataFile getComponentePrincipale() {
-	return componentePrincipale;
+        return componentePrincipale;
     }
 
     public void setComponentePrincipale(CryptoDataToValidateMetadataFile componentePrincipale) {
-	this.componentePrincipale = componentePrincipale;
+        this.componentePrincipale = componentePrincipale;
     }
 
     public List<CryptoDataToValidateMetadataFile> getSottoComponentiFirma() {
-	return sottoComponentiFirma;
+        return sottoComponentiFirma;
     }
 
     public void setSottoComponentiFirma(
-	    List<CryptoDataToValidateMetadataFile> sottoComponentiFirma) {
-	this.sottoComponentiFirma = sottoComponentiFirma;
+            List<CryptoDataToValidateMetadataFile> sottoComponentiFirma) {
+        this.sottoComponentiFirma = sottoComponentiFirma;
     }
 
     public List<CryptoDataToValidateMetadataFile> getSottoComponentiMarca() {
-	return sottoComponentiMarca;
+        return sottoComponentiMarca;
     }
 
     public void setSottoComponentiMarca(
-	    List<CryptoDataToValidateMetadataFile> sottoComponentiMarca) {
-	this.sottoComponentiMarca = sottoComponentiMarca;
+            List<CryptoDataToValidateMetadataFile> sottoComponentiMarca) {
+        this.sottoComponentiMarca = sottoComponentiMarca;
     }
 
 }

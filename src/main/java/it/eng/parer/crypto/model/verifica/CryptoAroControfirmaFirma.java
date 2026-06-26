@@ -28,7 +28,7 @@ public class CryptoAroControfirmaFirma implements Serializable {
     // private CryptoAroFirmaComp aroFirmaPadre;
 
     public CryptoAroControfirmaFirma() {
-	// empty
+        // empty
     }
 
     // public long getIdControfirmaFirma() {
@@ -39,11 +39,11 @@ public class CryptoAroControfirmaFirma implements Serializable {
     // this.idControfirmaFirma = idControfirmaFirma;
     // }
     public CryptoAroFirmaComp getAroFirmaFiglio() {
-	return this.aroFirmaFiglio;
+        return this.aroFirmaFiglio;
     }
 
     public void setAroFirmaFiglio(CryptoAroFirmaComp aroFirmaFiglio) {
-	this.aroFirmaFiglio = aroFirmaFiglio;
+        this.aroFirmaFiglio = aroFirmaFiglio;
     }
 
     // public CryptoAroFirmaComp getAroFirmaPadre() {

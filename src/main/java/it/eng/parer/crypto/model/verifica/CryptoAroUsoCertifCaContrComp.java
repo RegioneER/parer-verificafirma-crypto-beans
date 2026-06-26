@@ -31,7 +31,7 @@ public class CryptoAroUsoCertifCaContrComp implements Serializable {
     private CryptoFirCrl firCrl;
 
     public CryptoAroUsoCertifCaContrComp() {
-	// empty
+        // empty
     }
 
     // public long getIdUsoCertifCaContrComp() {
@@ -43,11 +43,11 @@ public class CryptoAroUsoCertifCaContrComp implements Serializable {
     // }
 
     public BigDecimal getPgCertifCa() {
-	return this.pgCertifCa;
+        return this.pgCertifCa;
     }
 
     public void setPgCertifCa(BigDecimal pgCertifCa) {
-	this.pgCertifCa = pgCertifCa;
+        this.pgCertifCa = pgCertifCa;
     }
 
     // public AroContrFirmaComp getAroContrFirmaComp() {
@@ -59,19 +59,19 @@ public class CryptoAroUsoCertifCaContrComp implements Serializable {
     // }
 
     public CryptoFirCertifCa getFirCertifCa() {
-	return this.firCertifCa;
+        return this.firCertifCa;
     }
 
     public void setFirCertifCa(CryptoFirCertifCa firCertifCa) {
-	this.firCertifCa = firCertifCa;
+        this.firCertifCa = firCertifCa;
     }
 
     public CryptoFirCrl getFirCrl() {
-	return this.firCrl;
+        return this.firCrl;
     }
 
     public void setFirCrl(CryptoFirCrl firCrl) {
-	this.firCrl = firCrl;
+        this.firCrl = firCrl;
     }
 
 }

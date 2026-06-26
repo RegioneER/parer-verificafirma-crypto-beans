@@ -42,91 +42,104 @@ public class CryptoProfiloVerifica implements Serializable {
     private boolean controlloCertificatoAbilitato = true;
     private boolean controlloCrlAbilitato = true;
     private boolean includeCertificateAndRevocationValues = true;
+    //
+    private boolean skipDocumentSignVerification = false; // default
 
     public static CryptoProfiloVerifica profiloDefault() {
-	return new CryptoProfiloVerifica();
+        return new CryptoProfiloVerifica();
     }
 
     public boolean isControlloCrittograficoAbilitato() {
-	return controlloCrittograficoAbilitato;
+        return controlloCrittograficoAbilitato;
     }
 
     public CryptoProfiloVerifica setControlloCrittograficoAbilitato(
-	    boolean controlloCrittograficoAbilitato) {
-	this.controlloCrittograficoAbilitato = controlloCrittograficoAbilitato;
-	return this;
+            boolean controlloCrittograficoAbilitato) {
+        this.controlloCrittograficoAbilitato = controlloCrittograficoAbilitato;
+        return this;
     }
 
     public boolean isControlloCatenaTrustAbilitato() {
-	return controlloCatenaTrustAbilitato;
+        return controlloCatenaTrustAbilitato;
     }
 
     public CryptoProfiloVerifica setControlloCatenaTrustAbilitato(
-	    boolean controlloCatenaTrustAbilitato) {
-	this.controlloCatenaTrustAbilitato = controlloCatenaTrustAbilitato;
-	return this;
+            boolean controlloCatenaTrustAbilitato) {
+        this.controlloCatenaTrustAbilitato = controlloCatenaTrustAbilitato;
+        return this;
     }
 
     public boolean isControlloCertificatoAbilitato() {
-	return controlloCertificatoAbilitato;
+        return controlloCertificatoAbilitato;
     }
 
     public CryptoProfiloVerifica setControlloCertificatoAbilitato(
-	    boolean controlloCertificatoAbilitato) {
-	this.controlloCertificatoAbilitato = controlloCertificatoAbilitato;
-	return this;
+            boolean controlloCertificatoAbilitato) {
+        this.controlloCertificatoAbilitato = controlloCertificatoAbilitato;
+        return this;
     }
 
     public boolean isControlloCrlAbilitato() {
-	return controlloCrlAbilitato;
+        return controlloCrlAbilitato;
     }
 
     public CryptoProfiloVerifica setControlloCrlAbilitato(boolean controlloCrlAbilitato) {
-	this.controlloCrlAbilitato = controlloCrlAbilitato;
-	return this;
+        this.controlloCrlAbilitato = controlloCrlAbilitato;
+        return this;
     }
 
     public boolean isIncludeCertificateAndRevocationValues() {
-	return includeCertificateAndRevocationValues;
+        return includeCertificateAndRevocationValues;
     }
 
     public CryptoProfiloVerifica setIncludeCertificateAndRevocationValues(
-	    boolean includeCertificateAndRevocationValues) {
-	this.includeCertificateAndRevocationValues = includeCertificateAndRevocationValues;
-	return this;
+            boolean includeCertificateAndRevocationValues) {
+        this.includeCertificateAndRevocationValues = includeCertificateAndRevocationValues;
+        return this;
+    }
+
+    public CryptoProfiloVerifica setSkipDocumentSignVerification(
+            boolean skipDocumentSignVerification) {
+        this.skipDocumentSignVerification = skipDocumentSignVerification;
+        return this;
+    }
+
+    public boolean isSkipDocumentSignVerification() {
+        return skipDocumentSignVerification;
     }
 
     @Override
     public String toString() {
-	return "CryptoProfiloVerifica [controlloCrittograficoAbilitato="
-		+ controlloCrittograficoAbilitato + ", controlloCatenaTrustAbilitato="
-		+ controlloCatenaTrustAbilitato + ", controlloCertificatoAbilitato="
-		+ controlloCertificatoAbilitato + ", controlloCrlAbilitato=" + controlloCrlAbilitato
-		+ ", includeCertificateAndRevocationValues=" + includeCertificateAndRevocationValues
-		+ "]";
+        return "CryptoProfiloVerifica [controlloCrittograficoAbilitato="
+                + controlloCrittograficoAbilitato + ", controlloCatenaTrustAbilitato="
+                + controlloCatenaTrustAbilitato + ", controlloCertificatoAbilitato="
+                + controlloCertificatoAbilitato + ", controlloCrlAbilitato=" + controlloCrlAbilitato
+                + ", includeCertificateAndRevocationValues=" + includeCertificateAndRevocationValues
+                + ", skipDocumentSignVerification=" + skipDocumentSignVerification + "]";
     }
 
     @Override
     public int hashCode() {
-	return Objects.hash(controlloCatenaTrustAbilitato, controlloCertificatoAbilitato,
-		controlloCrittograficoAbilitato, controlloCrlAbilitato,
-		includeCertificateAndRevocationValues);
+        return Objects.hash(controlloCatenaTrustAbilitato, controlloCertificatoAbilitato,
+                controlloCrittograficoAbilitato, controlloCrlAbilitato,
+                includeCertificateAndRevocationValues, skipDocumentSignVerification);
     }
 
     @Override
     public boolean equals(Object obj) {
-	if (this == obj)
-	    return true;
-	if (obj == null)
-	    return false;
-	if (getClass() != obj.getClass())
-	    return false;
-	CryptoProfiloVerifica other = (CryptoProfiloVerifica) obj;
-	return controlloCatenaTrustAbilitato == other.controlloCatenaTrustAbilitato
-		&& controlloCertificatoAbilitato == other.controlloCertificatoAbilitato
-		&& controlloCrittograficoAbilitato == other.controlloCrittograficoAbilitato
-		&& controlloCrlAbilitato == other.controlloCrlAbilitato
-		&& includeCertificateAndRevocationValues == other.includeCertificateAndRevocationValues;
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        CryptoProfiloVerifica other = (CryptoProfiloVerifica) obj;
+        return controlloCatenaTrustAbilitato == other.controlloCatenaTrustAbilitato
+                && controlloCertificatoAbilitato == other.controlloCertificatoAbilitato
+                && controlloCrittograficoAbilitato == other.controlloCrittograficoAbilitato
+                && controlloCrlAbilitato == other.controlloCrlAbilitato
+                && includeCertificateAndRevocationValues == other.includeCertificateAndRevocationValues
+                && skipDocumentSignVerification == other.skipDocumentSignVerification;
     }
 
 }

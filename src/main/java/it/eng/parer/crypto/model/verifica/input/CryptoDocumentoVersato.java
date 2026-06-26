@@ -30,30 +30,30 @@ public class CryptoDocumentoVersato implements Serializable {
     private byte[] contenuto;
 
     public CryptoDocumentoVersato() {
-	this.nome = "default";
+        this.nome = "default";
     }
 
     public CryptoDocumentoVersato(String nome, byte[] contenuto) {
-	this.nome = nome;
-	this.contenuto = contenuto;
+        this.nome = nome;
+        this.contenuto = contenuto;
     }
 
     public String getNome() {
-	return nome;
+        return nome;
     }
 
     public CryptoDocumentoVersato setNome(String nome) {
-	this.nome = nome;
-	return this;
+        this.nome = nome;
+        return this;
     }
 
     public byte[] getContenuto() {
-	return contenuto;
+        return contenuto;
     }
 
     public CryptoDocumentoVersato setContenuto(byte[] contenuto) {
-	this.contenuto = contenuto;
-	return this;
+        this.contenuto = contenuto;
+        return this;
     }
 
 }

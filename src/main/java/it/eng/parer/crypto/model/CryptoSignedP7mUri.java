@@ -34,35 +34,35 @@ public class CryptoSignedP7mUri implements Serializable {
     private String originalFileName;
 
     public CryptoSignedP7mUri() {
-	super();
+        super();
     }
 
     public CryptoSignedP7mUri(URI uri) {
-	super();
-	this.uri = uri;
-	this.originalFileName = StringUtils.EMPTY;
+        super();
+        this.uri = uri;
+        this.originalFileName = StringUtils.EMPTY;
     }
 
     public CryptoSignedP7mUri(URI uri, String originalFileName) {
-	super();
-	this.uri = uri;
-	this.originalFileName = originalFileName;
+        super();
+        this.uri = uri;
+        this.originalFileName = originalFileName;
     }
 
     public URI getUri() {
-	return uri;
+        return uri;
     }
 
     public void setUri(URI uri) {
-	this.uri = uri;
+        this.uri = uri;
     }
 
     public String getOriginalFileName() {
-	return originalFileName;
+        return originalFileName;
     }
 
     public void setOriginalFileName(String originalFileName) {
-	this.originalFileName = originalFileName;
+        this.originalFileName = originalFileName;
     }
 
 }

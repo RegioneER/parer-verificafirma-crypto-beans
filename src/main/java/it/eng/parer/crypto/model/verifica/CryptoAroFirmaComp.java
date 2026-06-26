@@ -78,15 +78,15 @@ public class CryptoAroFirmaComp implements Serializable {
     // this.tikaMime = tikaMime;
     // }
     public CryptoAroFirmaComp() {
-	// empty
+        // empty
     }
 
     public String getIdFirma() {
-	return idFirma;
+        return idFirma;
     }
 
     public void setIdFirma(String idFirma) {
-	this.idFirma = idFirma;
+        this.idFirma = idFirma;
     }
 
     // public long getIdFirmaComp() {
@@ -97,59 +97,59 @@ public class CryptoAroFirmaComp implements Serializable {
     // this.idFirmaComp = idFirmaComp;
     // }
     public String getCdFirmatario() {
-	return this.cdFirmatario;
+        return this.cdFirmatario;
     }
 
     public void setCdFirmatario(String cdFirmatario) {
-	this.cdFirmatario = cdFirmatario;
+        this.cdFirmatario = cdFirmatario;
     }
 
     public String getDlDnFirmatario() {
-	return this.dlDnFirmatario;
+        return this.dlDnFirmatario;
     }
 
     public void setDlDnFirmatario(String dlDnFirmatario) {
-	this.dlDnFirmatario = dlDnFirmatario;
+        this.dlDnFirmatario = dlDnFirmatario;
     }
 
     public String getDsAlgoFirma() {
-	return this.dsAlgoFirma;
+        return this.dsAlgoFirma;
     }
 
     public void setDsAlgoFirma(String dsAlgoFirma) {
-	this.dsAlgoFirma = dsAlgoFirma;
+        this.dsAlgoFirma = dsAlgoFirma;
     }
 
     public String getDsFirmaBase64() {
-	return this.dsFirmaBase64;
+        return this.dsFirmaBase64;
     }
 
     public void setDsFirmaBase64(String dsFirmaBase64) {
-	this.dsFirmaBase64 = dsFirmaBase64;
+        this.dsFirmaBase64 = dsFirmaBase64;
     }
 
     public String getDsMsgEsitoContrConforme() {
-	return this.dsMsgEsitoContrConforme;
+        return this.dsMsgEsitoContrConforme;
     }
 
     public void setDsMsgEsitoContrConforme(String dsMsgEsitoContrConforme) {
-	this.dsMsgEsitoContrConforme = dsMsgEsitoContrConforme;
+        this.dsMsgEsitoContrConforme = dsMsgEsitoContrConforme;
     }
 
     public String getDsMsgEsitoVerifFirma() {
-	return this.dsMsgEsitoVerifFirma;
+        return this.dsMsgEsitoVerifFirma;
     }
 
     public void setDsMsgEsitoVerifFirma(String dsMsgEsitoVerifFirma) {
-	this.dsMsgEsitoVerifFirma = dsMsgEsitoVerifFirma;
+        this.dsMsgEsitoVerifFirma = dsMsgEsitoVerifFirma;
     }
 
     public Date getDtFirma() {
-	return this.dtFirma;
+        return this.dtFirma;
     }
 
     public void setDtFirma(Date dtFirma) {
-	this.dtFirma = dtFirma;
+        this.dtFirma = dtFirma;
     }
 
     // public BigDecimal getIdStrut() {
@@ -160,92 +160,92 @@ public class CryptoAroFirmaComp implements Serializable {
     // this.idStrut = idStrut;
     // }
     public String getNmCognomeFirmatario() {
-	return this.nmCognomeFirmatario;
+        return this.nmCognomeFirmatario;
     }
 
     public void setNmCognomeFirmatario(String nmCognomeFirmatario) {
-	this.nmCognomeFirmatario = nmCognomeFirmatario;
+        this.nmCognomeFirmatario = nmCognomeFirmatario;
     }
 
     public String getNmFirmatario() {
-	return this.nmFirmatario;
+        return this.nmFirmatario;
     }
 
     public void setNmFirmatario(String nmFirmatario) {
-	this.nmFirmatario = nmFirmatario;
+        this.nmFirmatario = nmFirmatario;
     }
 
     public BigDecimal getPgBusta() {
-	return this.pgBusta;
+        return this.pgBusta;
     }
 
     public void setPgBusta(BigDecimal pgBusta) {
-	this.pgBusta = pgBusta;
+        this.pgBusta = pgBusta;
     }
 
     public BigDecimal getPgFirma() {
-	return this.pgFirma;
+        return this.pgFirma;
     }
 
     public void setPgFirma(BigDecimal pgFirma) {
-	this.pgFirma = pgFirma;
+        this.pgFirma = pgFirma;
     }
 
     public String getTiEsitoContrConforme() {
-	return this.tiEsitoContrConforme;
+        return this.tiEsitoContrConforme;
     }
 
     public void setTiEsitoContrConforme(String tiEsitoContrConforme) {
-	this.tiEsitoContrConforme = tiEsitoContrConforme;
+        this.tiEsitoContrConforme = tiEsitoContrConforme;
     }
 
     public String getTiEsitoVerifFirma() {
-	return this.tiEsitoVerifFirma;
+        return this.tiEsitoVerifFirma;
     }
 
     public void setTiEsitoVerifFirma(String tiEsitoVerifFirma) {
-	this.tiEsitoVerifFirma = tiEsitoVerifFirma;
+        this.tiEsitoVerifFirma = tiEsitoVerifFirma;
     }
 
     public String getTiFirma() {
-	return this.tiFirma;
+        return this.tiFirma;
     }
 
     public void setTiFirma(String tiFirma) {
-	this.tiFirma = tiFirma;
+        this.tiFirma = tiFirma;
     }
 
     public String getTiFormatoFirma() {
-	return this.tiFormatoFirma;
+        return this.tiFormatoFirma;
     }
 
     public void setTiFormatoFirma(String tiFormatoFirma) {
-	this.tiFormatoFirma = tiFormatoFirma;
+        this.tiFormatoFirma = tiFormatoFirma;
     }
 
     public String getTiRifTempUsato() {
-	return this.tiRifTempUsato;
+        return this.tiRifTempUsato;
     }
 
     public void setTiRifTempUsato(String tiRifTempUsato) {
-	this.tiRifTempUsato = tiRifTempUsato;
+        this.tiRifTempUsato = tiRifTempUsato;
     }
 
     public Date getTmRifTempUsato() {
-	return this.tmRifTempUsato;
+        return this.tmRifTempUsato;
     }
 
     public void setTmRifTempUsato(Date tmRifTempUsato) {
-	this.tmRifTempUsato = tmRifTempUsato;
+        this.tmRifTempUsato = tmRifTempUsato;
     }
 
     public List<CryptoAroControfirmaFirma> getAroControfirmaFirmaFiglios() {
-	return this.aroControfirmaFirmaFiglios;
+        return this.aroControfirmaFirmaFiglios;
     }
 
     public void setAroControfirmaFirmaFiglios(
-	    List<CryptoAroControfirmaFirma> aroControfirmaFirmaFiglios) {
-	this.aroControfirmaFirmaFiglios = aroControfirmaFirmaFiglios;
+            List<CryptoAroControfirmaFirma> aroControfirmaFirmaFiglios) {
+        this.aroControfirmaFirmaFiglios = aroControfirmaFirmaFiglios;
     }
 
     // public List<CryptoAroControfirmaFirma> getAroControfirmaFirmaPadres() {
@@ -257,11 +257,11 @@ public class CryptoAroFirmaComp implements Serializable {
     // this.aroControfirmaFirmaPadres = aroControfirmaFirmaPadres;
     // }
     public List<CryptoAroContrFirmaComp> getAroContrFirmaComps() {
-	return this.aroContrFirmaComps;
+        return this.aroContrFirmaComps;
     }
 
     public void setAroContrFirmaComps(List<CryptoAroContrFirmaComp> aroContrFirmaComps) {
-	this.aroContrFirmaComps = aroContrFirmaComps;
+        this.aroContrFirmaComps = aroContrFirmaComps;
     }
 
     // public AroBustaCrittog getAroBustaCrittog() {
@@ -279,19 +279,19 @@ public class CryptoAroFirmaComp implements Serializable {
     // this.aroCompDoc = aroCompDoc;
     // }
     public CryptoAroMarcaComp getAroMarcaComp() {
-	return this.aroMarcaComp;
+        return this.aroMarcaComp;
     }
 
     public void setAroMarcaComp(CryptoAroMarcaComp aroMarcaComp) {
-	this.aroMarcaComp = aroMarcaComp;
+        this.aroMarcaComp = aroMarcaComp;
     }
 
     public CryptoFirCertifFirmatario getFirCertifFirmatario() {
-	return this.firCertifFirmatario;
+        return this.firCertifFirmatario;
     }
 
     public void setFirCertifFirmatario(CryptoFirCertifFirmatario firCertifFirmatario) {
-	this.firCertifFirmatario = firCertifFirmatario;
+        this.firCertifFirmatario = firCertifFirmatario;
     }
 
     // public List<VolAppartFirmaVolume> getVolAppartFirmaVolumes() {

@@ -29,19 +29,19 @@ public class ParerRevokedCertificate implements Serializable {
     private Date revocationDate;
 
     public BigInteger getSerialNumber() {
-	return serialNumber;
+        return serialNumber;
     }
 
     public void setSerialNumber(BigInteger serialNumber) {
-	this.serialNumber = serialNumber;
+        this.serialNumber = serialNumber;
     }
 
     public Date getRevocationDate() {
-	return revocationDate;
+        return revocationDate;
     }
 
     public void setRevocationDate(Date revocationDate) {
-	this.revocationDate = revocationDate;
+        this.revocationDate = revocationDate;
     }
 
 }

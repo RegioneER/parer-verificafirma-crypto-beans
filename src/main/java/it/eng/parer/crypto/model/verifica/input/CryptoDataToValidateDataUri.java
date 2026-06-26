@@ -35,27 +35,27 @@ public class CryptoDataToValidateDataUri implements Serializable {
     private List<URI> marche;
 
     public URI getContenuto() {
-	return contenuto;
+        return contenuto;
     }
 
     public void setContenuto(URI contenuto) {
-	this.contenuto = contenuto;
+        this.contenuto = contenuto;
     }
 
     public List<URI> getFirme() {
-	return firme;
+        return firme;
     }
 
     public void setFirme(List<URI> firme) {
-	this.firme = firme;
+        this.firme = firme;
     }
 
     public List<URI> getMarche() {
-	return marche;
+        return marche;
     }
 
     public void setMarche(List<URI> marche) {
-	this.marche = marche;
+        this.marche = marche;
     }
 
 }

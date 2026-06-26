@@ -31,7 +31,7 @@ public class CryptoAroUsoCertifCaContrMarca implements Serializable {
     private CryptoFirCrl firCrl;
 
     public CryptoAroUsoCertifCaContrMarca() {
-	// empty
+        // empty
     }
 
     // public long getIdUsoCertifCaContrMarca() {
@@ -42,11 +42,11 @@ public class CryptoAroUsoCertifCaContrMarca implements Serializable {
     // this.idUsoCertifCaContrMarca = idUsoCertifCaContrMarca;
     // }
     public BigDecimal getPgCertifCa() {
-	return this.pgCertifCa;
+        return this.pgCertifCa;
     }
 
     public void setPgCertifCa(BigDecimal pgCertifCa) {
-	this.pgCertifCa = pgCertifCa;
+        this.pgCertifCa = pgCertifCa;
     }
 
     // public AroContrMarcaComp getAroContrMarcaComp() {
@@ -57,19 +57,19 @@ public class CryptoAroUsoCertifCaContrMarca implements Serializable {
     // this.aroContrMarcaComp = aroContrMarcaComp;
     // }
     public CryptoFirCertifCa getFirCertifCa() {
-	return this.firCertifCa;
+        return this.firCertifCa;
     }
 
     public void setFirCertifCa(CryptoFirCertifCa firCertifCa) {
-	this.firCertifCa = firCertifCa;
+        this.firCertifCa = firCertifCa;
     }
 
     public CryptoFirCrl getFirCrl() {
-	return this.firCrl;
+        return this.firCrl;
     }
 
     public void setFirCrl(CryptoFirCrl firCrl) {
-	this.firCrl = firCrl;
+        this.firCrl = firCrl;
     }
 
 }

@@ -33,7 +33,7 @@ public class CryptoFirCrl implements Serializable {
     private String uniqueId;
 
     public CryptoFirCrl() {
-	// empty
+        // empty
     }
 
     // public long getIdCrl() {
@@ -44,75 +44,75 @@ public class CryptoFirCrl implements Serializable {
     // this.idCrl = idCrl;
     // }
     public Date getDtIniCrl() {
-	return this.dtIniCrl;
+        return this.dtIniCrl;
     }
 
     public void setDtIniCrl(Date dtIniCrl) {
-	this.dtIniCrl = dtIniCrl;
+        this.dtIniCrl = dtIniCrl;
     }
 
     public Date getDtScadCrl() {
-	return this.dtScadCrl;
+        return this.dtScadCrl;
     }
 
     public void setDtScadCrl(Date dtScadCrl) {
-	this.dtScadCrl = dtScadCrl;
+        this.dtScadCrl = dtScadCrl;
     }
 
     public BigDecimal getNiSerialCrl() {
-	return this.niSerialCrl;
+        return this.niSerialCrl;
     }
 
     public void setNiSerialCrl(BigDecimal niSerialCrl) {
-	this.niSerialCrl = niSerialCrl;
+        this.niSerialCrl = niSerialCrl;
     }
 
     public CryptoFirCertifCa getFirCertifCa() {
-	return this.firCertifCa;
+        return this.firCertifCa;
     }
 
     public void setFirCertifCa(CryptoFirCertifCa firCertifCa) {
-	this.firCertifCa = firCertifCa;
+        this.firCertifCa = firCertifCa;
     }
 
     public CryptoFirFilePerFirma getFirFilePerFirma() {
-	return this.firFilePerFirma;
+        return this.firFilePerFirma;
     }
 
     public void setFirFilePerFirma(CryptoFirFilePerFirma firFilePerFirma) {
-	this.firFilePerFirma = firFilePerFirma;
+        this.firFilePerFirma = firFilePerFirma;
     }
 
     public String getLinkCRL() {
-	return linkCRL;
+        return linkCRL;
     }
 
     public void setLinkCRL(String linkCRL) {
-	this.linkCRL = linkCRL;
+        this.linkCRL = linkCRL;
     }
 
     public String getSubjectKeyID() {
-	return subjectKeyID;
+        return subjectKeyID;
     }
 
     public void setSubjectKeyID(String subjectKeyID) {
-	this.subjectKeyID = subjectKeyID;
+        this.subjectKeyID = subjectKeyID;
     }
 
     public String getSubjectDN() {
-	return subjectDN;
+        return subjectDN;
     }
 
     public void setSubjectDN(String subjectDN) {
-	this.subjectDN = subjectDN;
+        this.subjectDN = subjectDN;
     }
 
     public String getUniqueId() {
-	return uniqueId;
+        return uniqueId;
     }
 
     public void setUniqueId(String uniqueId) {
-	this.uniqueId = uniqueId;
+        this.uniqueId = uniqueId;
     }
 
 }

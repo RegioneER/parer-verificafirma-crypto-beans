@@ -28,31 +28,31 @@ public class CryptoFirIssuer implements Serializable {
     private List<CryptoFirCertifCa> firCertifCas;
 
     public CryptoFirIssuer() {
-	// Non fare nulla viene costruito automaticamente.
+        // Non fare nulla viene costruito automaticamente.
     }
 
     public String getDlDnIssuerCertifCa() {
-	return this.dlDnIssuerCertifCa;
+        return this.dlDnIssuerCertifCa;
     }
 
     public void setDlDnIssuerCertifCa(String dlDnIssuerCertifCa) {
-	this.dlDnIssuerCertifCa = dlDnIssuerCertifCa;
+        this.dlDnIssuerCertifCa = dlDnIssuerCertifCa;
     }
 
     public String getDlDnSubjectCertifCa() {
-	return dlDnSubjectCertifCa;
+        return dlDnSubjectCertifCa;
     }
 
     public void setDlDnSubjectCertifCa(String dlDnSubjectCertifCa) {
-	this.dlDnSubjectCertifCa = dlDnSubjectCertifCa;
+        this.dlDnSubjectCertifCa = dlDnSubjectCertifCa;
     }
 
     public List<CryptoFirCertifCa> getFirCertifCas() {
-	return this.firCertifCas;
+        return this.firCertifCas;
     }
 
     public void setFirCertifCas(List<CryptoFirCertifCa> firCertifCas) {
-	this.firCertifCas = firCertifCas;
+        this.firCertifCas = firCertifCas;
     }
 
 }

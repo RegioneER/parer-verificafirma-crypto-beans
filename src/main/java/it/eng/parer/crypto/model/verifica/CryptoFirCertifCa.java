@@ -45,7 +45,7 @@ public class CryptoFirCertifCa implements Serializable {
     private String dsSubjectKeyId;
 
     public CryptoFirCertifCa() {
-	// empty
+        // empty
     }
     // public long getIdCertifCa() {
     // return this.idCertifCa;
@@ -56,43 +56,43 @@ public class CryptoFirCertifCa implements Serializable {
     // }
 
     public Date getDtFinValCertifCa() {
-	return this.dtFinValCertifCa;
+        return this.dtFinValCertifCa;
     }
 
     public void setDtFinValCertifCa(Date dtFinValCertifCa) {
-	this.dtFinValCertifCa = dtFinValCertifCa;
+        this.dtFinValCertifCa = dtFinValCertifCa;
     }
 
     public Date getDtIniValCertifCa() {
-	return this.dtIniValCertifCa;
+        return this.dtIniValCertifCa;
     }
 
     public void setDtIniValCertifCa(Date dtIniValCertifCa) {
-	this.dtIniValCertifCa = dtIniValCertifCa;
+        this.dtIniValCertifCa = dtIniValCertifCa;
     }
 
     public BigDecimal getNiSerialCertifCa() {
-	return this.niSerialCertifCa;
+        return this.niSerialCertifCa;
     }
 
     public void setNiSerialCertifCa(BigDecimal niSerialCertifCa) {
-	this.niSerialCertifCa = niSerialCertifCa;
+        this.niSerialCertifCa = niSerialCertifCa;
     }
 
     public String getDsSubjectKeyId() {
-	return dsSubjectKeyId;
+        return dsSubjectKeyId;
     }
 
     public void setDsSubjectKeyId(String dsSubjectKeyId) {
-	this.dsSubjectKeyId = dsSubjectKeyId;
+        this.dsSubjectKeyId = dsSubjectKeyId;
     }
 
     public CryptoFirIssuer getFirIssuer() {
-	return this.firIssuer;
+        return this.firIssuer;
     }
 
     public void setFirIssuer(CryptoFirIssuer firIssuer) {
-	this.firIssuer = firIssuer;
+        this.firIssuer = firIssuer;
     }
     // public List<CryptoFirCertifFirmatario> getFirCertifFirmatarios() {
     // return this.firCertifFirmatarios;
@@ -111,19 +111,19 @@ public class CryptoFirCertifCa implements Serializable {
     // this.firCrls = firCrls;
     // }
     public CryptoFirFilePerFirma getFirFilePerFirma() {
-	return this.firFilePerFirma;
+        return this.firFilePerFirma;
     }
 
     public void setFirFilePerFirma(CryptoFirFilePerFirma firFilePerFirma) {
-	this.firFilePerFirma = firFilePerFirma;
+        this.firFilePerFirma = firFilePerFirma;
     }
 
     public List<CryptoFirUrlDistribCrl> getFirUrlDistribCrls() {
-	return this.firUrlDistribCrls;
+        return this.firUrlDistribCrls;
     }
 
     public void setFirUrlDistribCrls(List<CryptoFirUrlDistribCrl> firUrlDistribCrls) {
-	this.firUrlDistribCrls = firUrlDistribCrls;
+        this.firUrlDistribCrls = firUrlDistribCrls;
     }
 
 }

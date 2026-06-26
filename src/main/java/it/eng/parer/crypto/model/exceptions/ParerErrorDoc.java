@@ -31,43 +31,43 @@ public class ParerErrorDoc implements Serializable {
     private String description;
 
     public String getLink() {
-	return link;
+        return link;
     }
 
     public void setLink(String link) {
-	this.link = link;
+        this.link = link;
     }
 
     public String getCode() {
-	return code;
+        return code;
     }
 
     public void setCode(String code) {
-	this.code = code;
+        this.code = code;
     }
 
     public String getSummary() {
-	return summary;
+        return summary;
     }
 
     public void setSummary(String summary) {
-	this.summary = summary;
+        this.summary = summary;
     }
 
     public String getType() {
-	return type;
+        return type;
     }
 
     public void setType(String type) {
-	this.type = type;
+        this.type = type;
     }
 
     public String getDescription() {
-	return description;
+        return description;
     }
 
     public void setDescription(String description) {
-	this.description = description;
+        this.description = description;
     }
 
 }

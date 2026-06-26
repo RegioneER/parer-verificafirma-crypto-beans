@@ -31,31 +31,31 @@ public class ParerTSD implements Serializable {
     private byte[] encoded;
 
     public byte[] getEncoded() {
-	return encoded;
+        return encoded;
     }
 
     public void setEncoded(byte[] encoded) {
-	this.encoded = encoded;
+        this.encoded = encoded;
     }
 
     public ParerTST[] getTimeStampTokens() {
-	return timeStampTokens;
+        return timeStampTokens;
     }
 
     public void setTimeStampTokens(ParerTST[] timeStampTokens) {
-	this.timeStampTokens = timeStampTokens;
+        this.timeStampTokens = timeStampTokens;
     }
 
     public void addTimeStampToken(ParerTST timeStampToken) {
-	if (timeStampTokens == null) {
-	    timeStampTokens = new ParerTST[] {
-		    timeStampToken };
-	    return;
-	}
+        if (timeStampTokens == null) {
+            timeStampTokens = new ParerTST[] {
+                    timeStampToken };
+            return;
+        }
 
-	List<ParerTST> asList = Arrays.asList(timeStampTokens);
-	asList.add(timeStampToken);
-	timeStampTokens = asList.toArray(new ParerTST[] {});
+        List<ParerTST> asList = Arrays.asList(timeStampTokens);
+        asList.add(timeStampToken);
+        timeStampTokens = asList.toArray(new ParerTST[] {});
     }
 
 }

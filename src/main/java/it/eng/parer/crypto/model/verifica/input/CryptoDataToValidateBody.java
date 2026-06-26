@@ -27,19 +27,19 @@ public class CryptoDataToValidateBody {
     private CryptoDataToValidateDataUri data;
 
     public CryptoDataToValidateMetadata getMetadata() {
-	return metadata;
+        return metadata;
     }
 
     public void setMetadata(CryptoDataToValidateMetadata metadata) {
-	this.metadata = metadata;
+        this.metadata = metadata;
     }
 
     public CryptoDataToValidateDataUri getData() {
-	return data;
+        return data;
     }
 
     public void setData(CryptoDataToValidateDataUri data) {
-	this.data = data;
+        this.data = data;
     }
 
 }

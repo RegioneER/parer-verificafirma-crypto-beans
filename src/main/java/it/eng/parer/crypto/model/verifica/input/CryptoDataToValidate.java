@@ -47,62 +47,62 @@ public class CryptoDataToValidate implements Serializable {
     @NotNull(message = "La data di riferimento deve essere valorizzata")
     @DataRiferimento(message = "La tipologia della data di riferimento deve essere valorizzata correttamente")
     private TipologiaDataRiferimento tipologiaDataRiferimento = TipologiaDataRiferimento
-	    .verificaDefault();
+            .verificaDefault();
 
     public CryptoDocumentoVersato getContenuto() {
-	return contenuto;
+        return contenuto;
     }
 
     public void setContenuto(CryptoDocumentoVersato contenuto) {
-	this.contenuto = contenuto;
+        this.contenuto = contenuto;
     }
 
     public List<CryptoDocumentoVersato> getSottoComponentiFirma() {
-	return sottoComponentiFirma;
+        return sottoComponentiFirma;
     }
 
     public void setSottoComponentiFirma(List<CryptoDocumentoVersato> sottoComponentiFirma) {
-	this.sottoComponentiFirma = sottoComponentiFirma;
+        this.sottoComponentiFirma = sottoComponentiFirma;
     }
 
     public List<CryptoDocumentoVersato> getSottoComponentiMarca() {
-	return sottoComponentiMarca;
+        return sottoComponentiMarca;
     }
 
     public void setSottoComponentiMarca(List<CryptoDocumentoVersato> sottoComponentiMarca) {
-	this.sottoComponentiMarca = sottoComponentiMarca;
+        this.sottoComponentiMarca = sottoComponentiMarca;
     }
 
     public boolean addSottoComponenteFirma(CryptoDocumentoVersato sottoComponenteFirma) {
-	return this.sottoComponentiFirma.add(sottoComponenteFirma);
+        return this.sottoComponentiFirma.add(sottoComponenteFirma);
     }
 
     public boolean addSottoComponenteMarca(CryptoDocumentoVersato sottoComponenteMarca) {
-	return this.sottoComponentiMarca.add(sottoComponenteMarca);
+        return this.sottoComponentiMarca.add(sottoComponenteMarca);
     }
 
     public CryptoProfiloVerifica getProfiloVerifica() {
-	return profiloVerifica;
+        return profiloVerifica;
     }
 
     public void setProfiloVerifica(CryptoProfiloVerifica profiloVerifica) {
-	this.profiloVerifica = profiloVerifica;
+        this.profiloVerifica = profiloVerifica;
     }
 
     public void setTipologiaDataRiferimento(TipologiaDataRiferimento tipologiaDataRiferimento) {
-	this.tipologiaDataRiferimento = tipologiaDataRiferimento;
+        this.tipologiaDataRiferimento = tipologiaDataRiferimento;
     }
 
     public TipologiaDataRiferimento getTipologiaDataRiferimento() {
-	return tipologiaDataRiferimento;
+        return tipologiaDataRiferimento;
     }
 
     public String getUuid() {
-	return uuid;
+        return uuid;
     }
 
     public void setUuid(String uuid) {
-	this.uuid = uuid;
+        this.uuid = uuid;
     }
 
 }

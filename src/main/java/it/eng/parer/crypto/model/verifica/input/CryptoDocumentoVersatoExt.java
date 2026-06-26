@@ -36,34 +36,34 @@ public class CryptoDocumentoVersatoExt extends CryptoDocumentoVersato {
     }
 
     public CryptoDocumentoVersatoExt(URI contentAbsolutePath) {
-	this.contentAbsolutePath = contentAbsolutePath;
+        this.contentAbsolutePath = contentAbsolutePath;
     }
 
     public CryptoDocumentoVersatoExt setContentAbsolutePath(URI contentAbsolutePath) {
-	this.contentAbsolutePath = contentAbsolutePath;
-	return this;
+        this.contentAbsolutePath = contentAbsolutePath;
+        return this;
     }
 
     public URI getContentAbsolutePath() {
-	return contentAbsolutePath;
+        return contentAbsolutePath;
     }
 
     @Override
     public byte[] getContenuto() {
-	return readContenuto(contentAbsolutePath);
+        return readContenuto(contentAbsolutePath);
     }
 
     private static byte[] readContenuto(URI filePath) {
-	Objects.requireNonNull(filePath, "FilePath non può essere vuoto");
+        Objects.requireNonNull(filePath, "FilePath non può essere vuoto");
 
-	byte[] result = null;
-	try {
-	    result = Files.readAllBytes(Paths.get(filePath));
-	} catch (IOException ex) {
-	    throw new IllegalArgumentException(
-		    "Errore durante la lettura dell'URI [" + filePath.toASCIIString() + "]", ex);
-	}
-	return result;
+        byte[] result = null;
+        try {
+            result = Files.readAllBytes(Paths.get(filePath));
+        } catch (IOException ex) {
+            throw new IllegalArgumentException(
+                    "Errore durante la lettura dell'URI [" + filePath.toASCIIString() + "]", ex);
+        }
+        return result;
     }
 
 }

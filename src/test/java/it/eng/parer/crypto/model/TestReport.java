@@ -48,59 +48,59 @@ public class TestReport {
      * @throws JAXBException
      */
     @SuppressWarnings({
-	    "rawtypes", "unchecked" })
+            "rawtypes", "unchecked" })
     @Test
     public void testMarshaller() throws JAXBException {
 
-	CryptoFirFilePerFirma firFilePerFirma = new CryptoFirFilePerFirma();
-	firFilePerFirma.setNmFileDownload("Nuova CRL");
-	firFilePerFirma.setTiFilePerFirma("CRL");
-	firFilePerFirma.setBlFilePerFirma(new byte[] {
-		42, 53, 53, 42 });
+        CryptoFirFilePerFirma firFilePerFirma = new CryptoFirFilePerFirma();
+        firFilePerFirma.setNmFileDownload("Nuova CRL");
+        firFilePerFirma.setTiFilePerFirma("CRL");
+        firFilePerFirma.setBlFilePerFirma(new byte[] {
+                42, 53, 53, 42 });
 
-	CryptoFirCrl crl = new CryptoFirCrl();
-	crl.setFirFilePerFirma(firFilePerFirma);
-	crl.setDtIniCrl(Date.from(Instant.parse("2019-12-05T10:15:30.00Z")));
-	crl.setDtScadCrl(Date.from(Instant.parse("2019-12-06T15:15:30.00Z")));
-	crl.setNiSerialCrl(BigDecimal.valueOf(42_000_000L));
-	crl.setSubjectDN("CN=Regione Emilia-Romagna CA,DC=ente,DC=regione,DC=emr,DC=it");
+        CryptoFirCrl crl = new CryptoFirCrl();
+        crl.setFirFilePerFirma(firFilePerFirma);
+        crl.setDtIniCrl(Date.from(Instant.parse("2019-12-05T10:15:30.00Z")));
+        crl.setDtScadCrl(Date.from(Instant.parse("2019-12-06T15:15:30.00Z")));
+        crl.setNiSerialCrl(BigDecimal.valueOf(42_000_000L));
+        crl.setSubjectDN("CN=Regione Emilia-Romagna CA,DC=ente,DC=regione,DC=emr,DC=it");
 
-	CryptoAroContrFirmaComp controlloCrl = new CryptoAroContrFirmaComp();
-	controlloCrl.setFirCrl(crl);
-	controlloCrl.setTiContr("CRL");
-	controlloCrl.setDsMsgEsitoContrFirma("OK");
+        CryptoAroContrFirmaComp controlloCrl = new CryptoAroContrFirmaComp();
+        controlloCrl.setFirCrl(crl);
+        controlloCrl.setTiContr("CRL");
+        controlloCrl.setDsMsgEsitoContrFirma("OK");
 
-	CryptoAroFirmaComp firma = new CryptoAroFirmaComp();
-	firma.setAroContrFirmaComps(Arrays.asList(new CryptoAroContrFirmaComp[] {
-		controlloCrl }));
-	firma.setCdFirmatario("IT:BRLLLL56P13L781I");
-	firma.setDtFirma(Date.from(Instant.parse("2010-12-06T15:15:30.00Z")));
-	firma.setNmCognomeFirmatario("DOTE");
-	firma.setNmFirmatario("SACER");
+        CryptoAroFirmaComp firma = new CryptoAroFirmaComp();
+        firma.setAroContrFirmaComps(Arrays.asList(new CryptoAroContrFirmaComp[] {
+                controlloCrl }));
+        firma.setCdFirmatario("IT:BRLLLL56P13L781I");
+        firma.setDtFirma(Date.from(Instant.parse("2010-12-06T15:15:30.00Z")));
+        firma.setNmCognomeFirmatario("DOTE");
+        firma.setNmFirmatario("SACER");
 
-	CryptoAroCompDoc response = new CryptoAroCompDoc();
-	response.setAroFirmaComps(Arrays.asList(new CryptoAroFirmaComp[] {
-		firma }));
-	response.setDsNomeCompVers("COMPONENTE DI FIRMA");
+        CryptoAroCompDoc response = new CryptoAroCompDoc();
+        response.setAroFirmaComps(Arrays.asList(new CryptoAroFirmaComp[] {
+                firma }));
+        response.setDsNomeCompVers("COMPONENTE DI FIRMA");
 
-	StringWriter tmpStringWriter = new StringWriter();
+        StringWriter tmpStringWriter = new StringWriter();
 
-	JAXBContext jc = JAXBContext.newInstance(response.getClass());
-	Marshaller tmpGenericMarshaller = jc.createMarshaller();
-	JAXBIntrospector introspector = jc.createJAXBIntrospector();
-	if (null == introspector.getElementName(response)) {
-	    JAXBElement jaxbElement = new JAXBElement(new QName("ROOT"), response.getClass(),
-		    response);
-	    tmpGenericMarshaller.marshal(jaxbElement, tmpStringWriter);
-	} else {
-	    tmpGenericMarshaller.marshal(response, tmpStringWriter);
-	}
-	final String xmlReport = tmpStringWriter.toString();
+        JAXBContext jc = JAXBContext.newInstance(response.getClass());
+        Marshaller tmpGenericMarshaller = jc.createMarshaller();
+        JAXBIntrospector introspector = jc.createJAXBIntrospector();
+        if (null == introspector.getElementName(response)) {
+            JAXBElement jaxbElement = new JAXBElement(new QName("ROOT"), response.getClass(),
+                    response);
+            tmpGenericMarshaller.marshal(jaxbElement, tmpStringWriter);
+        } else {
+            tmpGenericMarshaller.marshal(response, tmpStringWriter);
+        }
+        final String xmlReport = tmpStringWriter.toString();
 
-	assertTrue(xmlReport.contains("<nmFileDownload>Nuova CRL</nmFileDownload>"));
-	assertTrue(xmlReport.contains("<tiFilePerFirma>CRL</tiFilePerFirma>"));
-	assertTrue(xmlReport.contains("<niSerialCrl>42000000</niSerialCrl>"));
-	assertTrue(xmlReport.contains("blFilePerFirma"));
+        assertTrue(xmlReport.contains("<nmFileDownload>Nuova CRL</nmFileDownload>"));
+        assertTrue(xmlReport.contains("<tiFilePerFirma>CRL</tiFilePerFirma>"));
+        assertTrue(xmlReport.contains("<niSerialCrl>42000000</niSerialCrl>"));
+        assertTrue(xmlReport.contains("blFilePerFirma"));
 
     }
 

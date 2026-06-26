@@ -48,36 +48,36 @@ import jakarta.validation.ConstraintValidatorContext;
  * @author Snidero_L
  */
 public class DataRiferimentoValidator
-	implements ConstraintValidator<DataRiferimento, TipologiaDataRiferimento> {
+        implements ConstraintValidator<DataRiferimento, TipologiaDataRiferimento> {
 
     @Override
     public boolean isValid(TipologiaDataRiferimento t, ConstraintValidatorContext cvc) {
 
-	if (t == null || t.getReferenceDateType() == null) {
-	    return false;
-	}
+        if (t == null || t.getReferenceDateType() == null) {
+            return false;
+        }
 
-	// verifica alla data di firma
-	if (CryptoEnums.TipoRifTemporale.DATA_FIRMA.equals(t.getReferenceDateType())
-		&& t.isUseSigningDate()) {
-	    return true;
-	}
-	// verifica alla data specifica
-	if (CryptoEnums.TipoRifTemporale.RIF_TEMP_VERS.equals(t.getReferenceDateType())
-		&& !t.isUseSigningDate() && t.getDataRiferimento() > 0) {
-	    return true;
-	}
-	// verifica alla data di versamento
-	if (CryptoEnums.TipoRifTemporale.DATA_VERS.equals(t.getReferenceDateType())
-		&& !t.isUseSigningDate() && t.getDataRiferimento() > 0) {
-	    return true;
-	}
-	// default
-	if (CryptoEnums.TipoRifTemporale.DATA_VERS.equals(t.getReferenceDateType())
-		&& !t.isUseSigningDate()) {
-	    return true;
-	}
+        // verifica alla data di firma
+        if (CryptoEnums.TipoRifTemporale.DATA_FIRMA.equals(t.getReferenceDateType())
+                && t.isUseSigningDate()) {
+            return true;
+        }
+        // verifica alla data specifica
+        if (CryptoEnums.TipoRifTemporale.RIF_TEMP_VERS.equals(t.getReferenceDateType())
+                && !t.isUseSigningDate() && t.getDataRiferimento() > 0) {
+            return true;
+        }
+        // verifica alla data di versamento
+        if (CryptoEnums.TipoRifTemporale.DATA_VERS.equals(t.getReferenceDateType())
+                && !t.isUseSigningDate() && t.getDataRiferimento() > 0) {
+            return true;
+        }
+        // default
+        if (CryptoEnums.TipoRifTemporale.DATA_VERS.equals(t.getReferenceDateType())
+                && !t.isUseSigningDate()) {
+            return true;
+        }
 
-	return false;
+        return false;
     }
 }

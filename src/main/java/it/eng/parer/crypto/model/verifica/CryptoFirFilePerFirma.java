@@ -33,7 +33,7 @@ public class CryptoFirFilePerFirma implements Serializable {
     // private FirCrl firCrl;
 
     public CryptoFirFilePerFirma() {
-	// empty
+        // empty
     }
 
     // public long getIdFilePerFirma() {
@@ -44,27 +44,27 @@ public class CryptoFirFilePerFirma implements Serializable {
     // this.idFilePerFirma = idFilePerFirma;
     // }
     public byte[] getBlFilePerFirma() {
-	return this.blFilePerFirma;
+        return this.blFilePerFirma;
     }
 
     public void setBlFilePerFirma(byte[] blFilePerFirma) {
-	this.blFilePerFirma = blFilePerFirma;
+        this.blFilePerFirma = blFilePerFirma;
     }
 
     public String getNmFileDownload() {
-	return this.nmFileDownload;
+        return this.nmFileDownload;
     }
 
     public void setNmFileDownload(String nmFileDownload) {
-	this.nmFileDownload = nmFileDownload;
+        this.nmFileDownload = nmFileDownload;
     }
 
     public String getTiFilePerFirma() {
-	return this.tiFilePerFirma;
+        return this.tiFilePerFirma;
     }
 
     public void setTiFilePerFirma(String tiFilePerFirma) {
-	this.tiFilePerFirma = tiFilePerFirma;
+        this.tiFilePerFirma = tiFilePerFirma;
     }
 
     // public FirCertifCa getFirCertifCa() {

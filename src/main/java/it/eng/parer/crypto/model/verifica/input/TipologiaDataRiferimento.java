@@ -40,49 +40,49 @@ public final class TipologiaDataRiferimento implements Serializable {
 
     // Predefinito
     public TipologiaDataRiferimento() {
-	this(CryptoEnums.TipoRifTemporale.DATA_VERS, false);
+        this(CryptoEnums.TipoRifTemporale.DATA_VERS, false);
     }
 
     public TipologiaDataRiferimento(CryptoEnums.TipoRifTemporale referenceDateType,
-	    boolean useSigningDate) {
-	this.referenceDateType = referenceDateType;
-	this.useSigningDate = useSigningDate;
-	this.dataRiferimento = new Date().getTime();
+            boolean useSigningDate) {
+        this.referenceDateType = referenceDateType;
+        this.useSigningDate = useSigningDate;
+        this.dataRiferimento = new Date().getTime();
     }
 
     public TipologiaDataRiferimento(CryptoEnums.TipoRifTemporale referenceDateType,
-	    boolean useSigningDate, long dataRiferimento) {
-	if (dataRiferimento < 1) {
-	    throw new IllegalArgumentException("La data di riferimento deve essere maggiore di 0");
-	}
-	this.referenceDateType = referenceDateType;
-	this.useSigningDate = useSigningDate;
-	this.dataRiferimento = dataRiferimento;
+            boolean useSigningDate, long dataRiferimento) {
+        if (dataRiferimento < 1) {
+            throw new IllegalArgumentException("La data di riferimento deve essere maggiore di 0");
+        }
+        this.referenceDateType = referenceDateType;
+        this.useSigningDate = useSigningDate;
+        this.dataRiferimento = dataRiferimento;
 
     }
 
     public CryptoEnums.TipoRifTemporale getReferenceDateType() {
-	return referenceDateType;
+        return referenceDateType;
     }
 
     public void setReferenceDateType(CryptoEnums.TipoRifTemporale referenceDateType) {
-	this.referenceDateType = referenceDateType;
+        this.referenceDateType = referenceDateType;
     }
 
     public void setUseSigningDate(boolean useSigningDate) {
-	this.useSigningDate = useSigningDate;
+        this.useSigningDate = useSigningDate;
     }
 
     public boolean isUseSigningDate() {
-	return useSigningDate;
+        return useSigningDate;
     }
 
     public long getDataRiferimento() {
-	return dataRiferimento;
+        return dataRiferimento;
     }
 
     public void setDataRiferimento(long dataRiferimento) {
-	this.dataRiferimento = dataRiferimento;
+        this.dataRiferimento = dataRiferimento;
     }
 
     /**
@@ -92,7 +92,7 @@ public final class TipologiaDataRiferimento implements Serializable {
      * @return Tipologia predefinita
      */
     public static final TipologiaDataRiferimento verificaDefault() {
-	return new TipologiaDataRiferimento();
+        return new TipologiaDataRiferimento();
     }
 
     /**
@@ -105,8 +105,8 @@ public final class TipologiaDataRiferimento implements Serializable {
      * @return Tipologia verifica per la data di versamento
      */
     public static final TipologiaDataRiferimento verificaDataVersamento(long dataVersamento) {
-	return new TipologiaDataRiferimento(CryptoEnums.TipoRifTemporale.DATA_VERS, false,
-		dataVersamento);
+        return new TipologiaDataRiferimento(CryptoEnums.TipoRifTemporale.DATA_VERS, false,
+                dataVersamento);
     }
 
     /**
@@ -116,7 +116,7 @@ public final class TipologiaDataRiferimento implements Serializable {
      * @return Tipologia di verifica alla data di firma
      */
     public static final TipologiaDataRiferimento verificaAllaDataDiFirma() {
-	return new TipologiaDataRiferimento(CryptoEnums.TipoRifTemporale.DATA_FIRMA, true);
+        return new TipologiaDataRiferimento(CryptoEnums.TipoRifTemporale.DATA_FIRMA, true);
     }
 
     /**
@@ -129,15 +129,15 @@ public final class TipologiaDataRiferimento implements Serializable {
      * @return Tipologia di verifca per la data specifica
      */
     public static final TipologiaDataRiferimento verificaAllaDataSpecifica(long dataSpecifica) {
-	return new TipologiaDataRiferimento(CryptoEnums.TipoRifTemporale.RIF_TEMP_VERS, false,
-		dataSpecifica);
+        return new TipologiaDataRiferimento(CryptoEnums.TipoRifTemporale.RIF_TEMP_VERS, false,
+                dataSpecifica);
     }
 
     @Override
     public String toString() {
-	return "TipologiaDataRiferimento{" + "referenceDateType=" + referenceDateType
-		+ ", useSigningDate=" + useSigningDate + ", dataRiferimento=" + dataRiferimento
-		+ '}';
+        return "TipologiaDataRiferimento{" + "referenceDateType=" + referenceDateType
+                + ", useSigningDate=" + useSigningDate + ", dataRiferimento=" + dataRiferimento
+                + '}';
     }
 
 }

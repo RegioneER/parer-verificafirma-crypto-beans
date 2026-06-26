@@ -34,43 +34,43 @@ public class ParerCertificate implements Serializable {
     private String subjectDN;
 
     public void setIssuerDN(String issuerDN) {
-	this.issuerDN = issuerDN;
+        this.issuerDN = issuerDN;
     }
 
     public String getIssuerDN() {
-	return issuerDN;
+        return issuerDN;
     }
 
     public String getSubjectDN() {
-	return subjectDN;
+        return subjectDN;
     }
 
     public void setSubjectDN(String subjectDN) {
-	this.subjectDN = subjectDN;
+        this.subjectDN = subjectDN;
     }
 
     public String getKeyId() {
-	return keyId;
+        return keyId;
     }
 
     public void setKeyId(String keyId) {
-	this.keyId = keyId;
+        this.keyId = keyId;
     }
 
     public byte[] getExtensionValueSpecifico() {
-	return extensionValueSpecifico;
+        return extensionValueSpecifico;
     }
 
     public void setExtensionValueSpecifico(byte[] extensionValueSpecifico) {
-	this.extensionValueSpecifico = extensionValueSpecifico;
+        this.extensionValueSpecifico = extensionValueSpecifico;
     }
 
     public byte[] getContent() {
-	return content;
+        return content;
     }
 
     public void setContent(byte[] content) {
-	this.content = content;
+        this.content = content;
     }
 
     // PER SACER, DA POPOLARE
@@ -96,51 +96,51 @@ public class ParerCertificate implements Serializable {
     // String surname = subjectName.getRDNs(BCStyle.SURNAME)[0].getFirst().getValue().toString();
 
     public BigInteger getSerialNumber() {
-	return serialNumber;
+        return serialNumber;
     }
 
     public void setSerialNumber(BigInteger serialNumber) {
-	this.serialNumber = serialNumber;
+        this.serialNumber = serialNumber;
     }
 
     public Date getNotBefore() {
-	return notBefore;
+        return notBefore;
     }
 
     public void setNotBefore(Date notBefore) {
-	this.notBefore = notBefore;
+        this.notBefore = notBefore;
     }
 
     public Date getNotAfter() {
-	return notAfter;
+        return notAfter;
     }
 
     public void setNotAfter(Date notAfter) {
-	this.notAfter = notAfter;
+        this.notAfter = notAfter;
     }
 
     public String getPrincipalSubjectName() {
-	return principalSubjectName;
+        return principalSubjectName;
     }
 
     public void setPrincipalSubjectName(String principalSubjectName) {
-	this.principalSubjectName = principalSubjectName;
+        this.principalSubjectName = principalSubjectName;
     }
 
     public String getPrincipalSubjectSerialNumber() {
-	return principalSubjectSerialNumber;
+        return principalSubjectSerialNumber;
     }
 
     public void setPrincipalSubjectSerialNumber(String principalSubjectSerialNumber) {
-	this.principalSubjectSerialNumber = principalSubjectSerialNumber;
+        this.principalSubjectSerialNumber = principalSubjectSerialNumber;
     }
 
     public String getPrincipalSubjectSurname() {
-	return principalSubjectSurname;
+        return principalSubjectSurname;
     }
 
     public void setPrincipalSubjectSurname(String principalSubjectSurname) {
-	this.principalSubjectSurname = principalSubjectSurname;
+        this.principalSubjectSurname = principalSubjectSurname;
     }
 
     // public String getSignatureBase64() {

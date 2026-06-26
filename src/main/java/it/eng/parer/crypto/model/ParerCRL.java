@@ -44,98 +44,98 @@ public class ParerCRL implements Serializable {
     private String keyId;
 
     public String getSubjectDN() {
-	return subjectDN;
+        return subjectDN;
     }
 
     public void setSubjectDN(String subjectDN) {
-	this.subjectDN = subjectDN;
+        this.subjectDN = subjectDN;
     }
 
     public String getKeyId() {
-	return keyId;
+        return keyId;
     }
 
     public void setKeyId(String keyId) {
-	this.keyId = keyId;
+        this.keyId = keyId;
     }
 
     private Set<ParerRevokedCertificate> revokedCertificates = new HashSet<>();
 
     public String getPrincipalName() {
-	return principalName;
+        return principalName;
     }
 
     public void setPrincipalName(String principalName) {
-	this.principalName = principalName;
+        this.principalName = principalName;
     }
 
     public Date getThisUpdate() {
-	return thisUpdate;
+        return thisUpdate;
     }
 
     public void setThisUpdate(Date thisUpdate) {
-	this.thisUpdate = thisUpdate;
+        this.thisUpdate = thisUpdate;
     }
 
     public byte[] getEncoded() {
-	return encoded;
+        return encoded;
     }
 
     public void setEncoded(byte[] encoded) {
-	this.encoded = encoded;
+        this.encoded = encoded;
     }
 
     public Date getNextUpdate() {
-	return nextUpdate;
+        return nextUpdate;
     }
 
     public void setNextUpdate(Date nextUpdate) {
-	this.nextUpdate = nextUpdate;
+        this.nextUpdate = nextUpdate;
     }
 
     public Set<ParerRevokedCertificate> getRevokedCertificates() {
-	return revokedCertificates;
+        return revokedCertificates;
     }
 
     public void setRevokedCertificates(Set<ParerRevokedCertificate> revokedCertificates) {
-	this.revokedCertificates = revokedCertificates;
+        this.revokedCertificates = revokedCertificates;
     }
 
     public ParerRevokedCertificate getRevokedCertificate(BigInteger serialNumber) {
-	for (ParerRevokedCertificate revokedCertificate : revokedCertificates) {
-	    if (revokedCertificate.getSerialNumber().equals(serialNumber)) {
-		return revokedCertificate;
-	    }
-	}
-	return null;
+        for (ParerRevokedCertificate revokedCertificate : revokedCertificates) {
+            if (revokedCertificate.getSerialNumber().equals(serialNumber)) {
+                return revokedCertificate;
+            }
+        }
+        return null;
     }
 
     public void addRevokedCertificate(ParerRevokedCertificate revokedCertificate) {
-	revokedCertificates.add(revokedCertificate);
+        revokedCertificates.add(revokedCertificate);
     }
 
     public byte[] getExtensionValueOidSpecifico() {
-	return extensionValueOidSpecifico;
+        return extensionValueOidSpecifico;
     }
 
     public void setExtensionValueOidSpecifico(byte[] extensionValueOidSpecifico) {
-	this.extensionValueOidSpecifico = extensionValueOidSpecifico;
+        this.extensionValueOidSpecifico = extensionValueOidSpecifico;
     }
 
     public byte[] getNumBytes() {
-	return numBytes;
+        return numBytes;
     }
 
     public void setNumBytes(byte[] numBytes) {
-	this.numBytes = numBytes;
+        this.numBytes = numBytes;
     }
 
     public BigInteger getCrlNum() {
-	return crlNum;
+        return crlNum;
     }
 
     public void setCrlNum(BigInteger crlNum) {
-	this.crlNum = crlNum;
+        this.crlNum = crlNum;
     }
 
     /**
@@ -147,19 +147,19 @@ public class ParerCRL implements Serializable {
      * @return uniqueID della CRL, ovvero l'MD5 tra subjectDN a authKeyID.
      */
     public static String calcolaUniqueId(String subjectDN, String authKeyID) {
-	try {
-	    MessageDigest md = MessageDigest.getInstance("MD5");
-	    String toHash = subjectDN + authKeyID;
-	    md.update(toHash.getBytes(Charset.forName("UTF-8")));
-	    // Convert hash bytes to hex format
-	    StringBuilder sb = new StringBuilder();
-	    for (byte b : md.digest()) {
-		sb.append(String.format("%02x", b));
-	    }
-	    return sb.toString();
-	} catch (Exception e) {
-	    throw new IllegalArgumentException("Errore durante il calcolo dell'id univoco", e);
-	}
+        try {
+            MessageDigest md = MessageDigest.getInstance("MD5");
+            String toHash = subjectDN + authKeyID;
+            md.update(toHash.getBytes(Charset.forName("UTF-8")));
+            // Convert hash bytes to hex format
+            StringBuilder sb = new StringBuilder();
+            for (byte b : md.digest()) {
+                sb.append(String.format("%02x", b));
+            }
+            return sb.toString();
+        } catch (Exception e) {
+            throw new IllegalArgumentException("Errore durante il calcolo dell'id univoco", e);
+        }
     }
 
 }

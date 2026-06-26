@@ -28,38 +28,38 @@ public class ParerTST implements Serializable {
     private TimeStampInfo timeStampInfo;
 
     public byte[] getEncoded() {
-	return encoded;
+        return encoded;
     }
 
     public void setEncoded(byte[] encoded) {
-	this.encoded = encoded;
+        this.encoded = encoded;
     }
 
     public TimeStampInfo getTimeStampInfo() {
-	return timeStampInfo;
+        return timeStampInfo;
     }
 
     public void setTimeStampInfo(TimeStampInfo timeStampInfo) {
-	this.timeStampInfo = timeStampInfo;
+        this.timeStampInfo = timeStampInfo;
     }
 
     public TimeStampInfo create() {
-	return new TimeStampInfo();
+        return new TimeStampInfo();
     }
 
     public class TimeStampInfo implements Serializable {
 
-	private static final long serialVersionUID = -6590203073891307988L;
+        private static final long serialVersionUID = -6590203073891307988L;
 
-	private Date genTime;
+        private Date genTime;
 
-	public Date getGenTime() {
-	    return genTime;
-	}
+        public Date getGenTime() {
+            return genTime;
+        }
 
-	public void setGenTime(Date genTime) {
-	    this.genTime = genTime;
-	}
+        public void setGenTime(Date genTime) {
+            this.genTime = genTime;
+        }
 
     }
 

@@ -39,7 +39,7 @@ public class CryptoAroContrMarcaComp implements Serializable {
     private List<CryptoAroUsoCertifCaContrMarca> aroUsoCertifCaContrMarcas;
 
     public CryptoAroContrMarcaComp() {
-	// empty
+        // empty
     }
 
     // public long getIdContrMarcaComp() {
@@ -50,27 +50,27 @@ public class CryptoAroContrMarcaComp implements Serializable {
     // this.idContrMarcaComp = idContrMarcaComp;
     // }
     public String getDsMsgEsitoContrMarca() {
-	return this.dsMsgEsitoContrMarca;
+        return this.dsMsgEsitoContrMarca;
     }
 
     public void setDsMsgEsitoContrMarca(String dsMsgEsitoContrMarca) {
-	this.dsMsgEsitoContrMarca = dsMsgEsitoContrMarca;
+        this.dsMsgEsitoContrMarca = dsMsgEsitoContrMarca;
     }
 
     public String getTiContr() {
-	return this.tiContr;
+        return this.tiContr;
     }
 
     public void setTiContr(String tiContr) {
-	this.tiContr = tiContr;
+        this.tiContr = tiContr;
     }
 
     public String getTiEsitoContrMarca() {
-	return this.tiEsitoContrMarca;
+        return this.tiEsitoContrMarca;
     }
 
     public void setTiEsitoContrMarca(String tiEsitoContrMarca) {
-	this.tiEsitoContrMarca = tiEsitoContrMarca;
+        this.tiEsitoContrMarca = tiEsitoContrMarca;
     }
 
     // public AroMarcaComp getAroMarcaComp() {
@@ -82,20 +82,20 @@ public class CryptoAroContrMarcaComp implements Serializable {
     // }
     //
     public CryptoFirCrl getFirCrl() {
-	return this.firCrl;
+        return this.firCrl;
     }
 
     public void setFirCrl(CryptoFirCrl firCrl) {
-	this.firCrl = firCrl;
+        this.firCrl = firCrl;
     }
 
     public List<CryptoAroUsoCertifCaContrMarca> getAroUsoCertifCaContrMarcas() {
-	return this.aroUsoCertifCaContrMarcas;
+        return this.aroUsoCertifCaContrMarcas;
     }
 
     public void setAroUsoCertifCaContrMarcas(
-	    List<CryptoAroUsoCertifCaContrMarca> aroUsoCertifCaContrMarcas) {
-	this.aroUsoCertifCaContrMarcas = aroUsoCertifCaContrMarcas;
+            List<CryptoAroUsoCertifCaContrMarca> aroUsoCertifCaContrMarcas) {
+        this.aroUsoCertifCaContrMarcas = aroUsoCertifCaContrMarcas;
     }
 
 }
